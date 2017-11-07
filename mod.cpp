@@ -1,0 +1,12 @@
+name = "Olympus Community Mod";
+picture = "olympus_mod_logo.paa";
+logo = "olympus_mod_logo.paa";
+logoOver = "olympus_mod_logo.paa";
+actionName = "Website";
+action = "http://olympus-gaming.com/";
+description = "Olympus Mod";
+tooltip = "Olympus Mod";
+tooltipOwned = "Olympus Mod Owned";
+overview = "Olympus Mod is mod containing alot of various addons to enhance our experience without increasing the mod count total.";
+overviewPicture = "olympus_mod_logo.paa";
+author = "Olympus Gaming";
