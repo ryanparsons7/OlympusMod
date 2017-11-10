@@ -108,7 +108,7 @@ class ftl : g
 {
     displayName = "Fireteam Leader";
     vest[] = {"rhs_6b23_digi_6sh92_vog_headset"};
-    scope[] = {"rhs_acc_pgo7v3"};
+    scope[] = {"rhs_acc_1p29"};
     magazines[] +=
     {
         LIST_2("rhs_GRD40_Green"),
