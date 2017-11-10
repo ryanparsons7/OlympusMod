@@ -1,5 +1,4 @@
-LIST_20("ACE_elasticBandage"),
-LIST_20("ACE_packingBandage"),
+LIST_40("ACE_elasticBandage"),
 LIST_10("ACE_morphine"),
 LIST_4("ACE_tourniquet"),
 LIST_10("ACE_epinephrine"),
