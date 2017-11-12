@@ -253,17 +253,30 @@ class matag : car
 class hatg : car
 {
     displayName = "HAT Gunner";
-    secondaryWeapon[] = {"rhs_weap_m72a7"};
+    secondaryWeapon[] = {"rhs_weap_rpg7"};
+    backPack[] = {"rhs_rpg_empty"};
+    backpackItems[] =
+    {
+        LIST_2("rhs_rpg7_PG7V_mag")
+    };
 };
 class hatac : r
 {
     displayName = "HAT Ammo Carrier";
-    secondaryWeapon[] = {"rhs_weap_m72a7"};
+    backPack[] = {"rhs_rpg_empty"};
+    backpackItems[] =
+    {
+        LIST_2("rhs_rpg7_PG7V_mag")
+    };
 };
 class hatag : car
 {
     displayName = "HAT Assistant Gunner";
-    secondaryWeapon[] = {"rhs_weap_m72a7"};
+    backPack[] = {"rhs_rpg_empty"};
+    backpackItems[] =
+    {
+        LIST_2("rhs_rpg7_PG7V_mag")
+    };
     linkedItems[] += {"Binocular"};
 };
 class mtrg : car
@@ -312,12 +325,12 @@ class samag : car
 class sn : r
 {
     displayName = "Sniper";
-    primaryWeapon[] = {"rhs_weap_m24sws"};
-    scope[] = {"rhsusf_acc_M8541_low_wd"};
+    primaryWeapon[] = {"rhs_weap_svdp_wd"};
+    scope[] = {"rhs_acc_pso1m21"};
     sidearmWeapon[] = {"rhs_weap_makarov_pm"};
     magazines[] =
     {
-        LIST_9("rhsusf_5Rnd_762x51_m118_special_Mag"),
+        LIST_9("rhs_10Rnd_762x54mmR_7N1"),
         LIST_2("rhs_mag_rgd5"),
         LIST_4("rhs_mag_9x18_8_57N181S")
     };
