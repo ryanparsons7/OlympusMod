@@ -60,7 +60,7 @@ class r : baseMan
     backpack[] = {"rhsusf_assault_eagleaiii_ocp"};
     primaryWeapon[] = {"rhs_weap_hk416d145"};
     scope[] = {"rhsusf_acc_eotech_552"};
-    attachment[] = {"rhsusf_acc_anpeq15A"};
+    attachment[] = {"rhsusf_acc_anpeq15_bk_light"};
     magazines[] =
     {
         LIST_8("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
