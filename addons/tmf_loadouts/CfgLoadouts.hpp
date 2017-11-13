@@ -36,4 +36,10 @@ class CfgLoadouts
 		category = "Russian";
         #include "loadouts\ru_msv.hpp"
     };
+    class us_army_ocp
+    {
+        displayName = "US Army OCP"
+		category = "American";
+        #include "loadouts\us_army_ocp.hpp"
+    };
 };
