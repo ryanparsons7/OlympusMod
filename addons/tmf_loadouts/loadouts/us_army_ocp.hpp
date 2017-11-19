@@ -348,20 +348,25 @@ class sp : ftl
 class vc : car
 {
     displayName = "Vehicle Commander";
-    vest[] = {"rhsusf_iotv_ocp"};
     headgear[] = {"rhsusf_cvc_green_alt_helmet"};
     goggles[] = {"rhsusf_shemagh2_gogg_tan"};
     radios[] = {"ACRE_PRC117F"};
 	hmd[] = {};
 };
-class vd : vc
+class vd : car
 {
     displayName = "Vehicle Driver";
+    headgear[] = {"rhsusf_cvc_green_alt_helmet"};
+    goggles[] = {"rhsusf_shemagh2_gogg_tan"};
+	hmd[] = {};
     backpackItems[] = {"ToolKit"};
 };
-class vg : vc
+class vg : car
 {
     displayName = "Vehicle Gunner";
+    headgear[] = {"rhsusf_cvc_green_alt_helmet"};
+    goggles[] = {"rhsusf_shemagh2_gogg_tan"};
+	hmd[] = {};
 };
 class pp : car
 {

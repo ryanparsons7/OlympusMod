@@ -354,14 +354,20 @@ class vc : smg
     backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A"};
     radios[] = {"ACRE_PRC117F"};
 };
-class vd : vc
+class vd : smg
 {
     displayName = "Vehicle Driver";
+    vest[] = {"UK3CB_BAF_V_Osprey_Rifleman_A"};
+    headgear[] = {"UK3CB_BAF_H_CrewHelmet_A"};
+    backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A"};
     backpackItems[] = {"ToolKit"};
 };
-class vg : vc
+class vg : smg
 {
     displayName = "Vehicle Gunner";
+    vest[] = {"UK3CB_BAF_V_Osprey_Rifleman_A"};
+    headgear[] = {"UK3CB_BAF_H_CrewHelmet_A"};
+    backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A"};
 };
 class pp : smg
 {

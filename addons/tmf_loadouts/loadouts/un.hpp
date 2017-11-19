@@ -320,15 +320,19 @@ class vc : smg
 	hmd[] = {};
     headgear[] = {"rhs_tsh4"};
 };
-class vd : vc
+class vd : smg
 {
     displayName = "Vehicle Driver";
     backpack[] = {"rhs_assault_umbts_engineer"};
     backpackItems[] = {"ToolKit"};
+	hmd[] = {};
+    headgear[] = {"rhs_tsh4"};
 };
-class vg : vc
+class vg : smg
 {
     displayName = "Vehicle Gunner";
+	hmd[] = {};
+    headgear[] = {"rhs_tsh4"};
 };
 class pp : smg
 {

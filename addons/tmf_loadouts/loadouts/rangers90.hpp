@@ -333,20 +333,22 @@ class vc : smg
     displayName = "Vehicle Commander";
 	hmd[] = {};
     headgear[] = {"usm_helmet_cvc"};
-    backpack[] = {"usm_pack_st138_prc77"};
+    backpack[] = {"usm_pack_alice"};
     radios[] = {"ACRE_PRC117F"};
 };
-class vd : vc
+class vd : smg
 {
     displayName = "Vehicle Driver";
+	hmd[] = {};
+    headgear[] = {"usm_helmet_cvc"};
     backpack[] = {"usm_pack_alice"};
     backpackItems[] = {"ToolKit"};
 };
-class vg : vc
+class vg : smg
 {
     displayName = "Vehicle Gunner";
-    backpack[] = {};
-    radios[] = {};
+	hmd[] = {};
+    headgear[] = {"usm_helmet_cvc"};
 };
 class pp : smg
 {

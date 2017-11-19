@@ -359,14 +359,20 @@ class vc : smg
     goggles[] = {"rhs_scarf"};
     radios[] = {"ACRE_PRC117F"};
 };
-class vd : vc
+class vd : smg
 {
     displayName = "Vehicle Driver";
+    vest[] = {"rhs_vydra_3m"};
+    headgear[] = {"rhs_tsh4_ess"};
+    goggles[] = {"rhs_scarf"};
     backpackItems[] = {"ToolKit"};
 };
-class vg : vc
+class vg : smg
 {
     displayName = "Vehicle Gunner";
+    vest[] = {"rhs_vydra_3m"};
+    headgear[] = {"rhs_tsh4_ess"};
+    goggles[] = {"rhs_scarf"};
 };
 class pp : smg
 {

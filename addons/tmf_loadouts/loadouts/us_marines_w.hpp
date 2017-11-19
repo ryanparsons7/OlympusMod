@@ -366,14 +366,22 @@ class vc : car
     radios[] = {"ACRE_PRC117F"};
 	hmd[] = {};
 };
-class vd : vc
+class vd : car
 {
     displayName = "Vehicle Driver";
+    vest[] = {"rhsusf_spc_crewman"};
+    headgear[] = {"rhsusf_cvc_green_helmet"};
+    goggles[] = {"rhs_ess_black"};
+	hmd[] = {};
     backpackItems[] = {"ToolKit"};
 };
-class vg : vc
+class vg : car
 {
     displayName = "Vehicle Gunner";
+    vest[] = {"rhsusf_spc_crewman"};
+    headgear[] = {"rhsusf_cvc_green_helmet"};
+    goggles[] = {"rhs_ess_black"};-
+	hmd[] = {};
 };
 class pp : car
 {
