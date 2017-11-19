@@ -4,7 +4,7 @@
 class baseMan {// Weaponless baseclass
     displayName = "Unarmed";
     // All randomized.
-     uniform[] = {"rhs_uniform_msv_emr"};
+     uniform[] = {"rhs_uniform_emr_patchless"};
        vest[] = {};
        backpack[] = {"rhs_assault_umbts"};
        headgear[] = {};
@@ -55,11 +55,11 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    headgear[] = {"rhs_6b27m_green"};
+    headgear[] = {"rhs_6b47"};
     vest[] = {"rhs_6b23_digi_6sh92"};
-    primaryWeapon[] = {"rhs_weap_ak74m"};
-    scope[] = {"rhs_acc_pkas"};
-    silencer[] = {"rhs_acc_dtk"};
+    primaryWeapon[] = {"hlc_rifle_ak12"};
+    scope[] = {"rhs_acc_1p87"};
+    attachment[] = {"rhs_acc_2dpZenit_ris"};
     magazines[] =
     {
         LIST_8("rhs_30Rnd_545x39_AK"),
@@ -71,7 +71,7 @@ class g : r
 {
     displayName = "Grenadier";
     vest[] = {"rhs_6b23_digi_6sh92_vog"};
-    primaryWeapon[] = {"rhs_weap_ak74m_gp25"};
+    primaryWeapon[] = {"hlc_rifle_ak12GL"};
     magazines[] +=
     {
         LIST_5("rhs_VOG25"),
@@ -81,7 +81,7 @@ class g : r
 class car : r
 {
     displayName = "Carabinier";
-    primaryWeapon[] = {"rhs_weap_ak74m_folded"};
+    primaryWeapon[] = {"hlc_rifle_aku12"};
 };
 class m : r
 {
@@ -108,7 +108,7 @@ class ftl : g
 {
     displayName = "Fireteam Leader";
     vest[] = {"rhs_6b23_digi_6sh92_vog_headset"};
-    scope[] = {"rhs_acc_1p29"};
+    scope[] = {"optic_MRCO"};
     magazines[] +=
     {
         LIST_2("rhs_GRD40_Green"),

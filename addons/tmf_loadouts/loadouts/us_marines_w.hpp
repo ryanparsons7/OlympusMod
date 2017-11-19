@@ -380,7 +380,7 @@ class vg : car
     displayName = "Vehicle Gunner";
     vest[] = {"rhsusf_spc_crewman"};
     headgear[] = {"rhsusf_cvc_green_helmet"};
-    goggles[] = {"rhs_ess_black"};-
+    goggles[] = {"rhs_ess_black"};
 	hmd[] = {};
 };
 class pp : car
