@@ -62,7 +62,7 @@ class r : baseMan
     attachment[] = {"rhs_acc_2dpZenit_ris"};
     magazines[] =
     {
-        LIST_8("rhs_30Rnd_545x39_AK"),
+        LIST_6("rhs_30Rnd_545x39_AK"),
         LIST_2("rhs_mag_rgn"),
         LIST_2("rhs_mag_rdg2_white")
     };
@@ -74,8 +74,8 @@ class g : r
     primaryWeapon[] = {"hlc_rifle_ak12GL"};
     magazines[] +=
     {
-        LIST_5("rhs_VOG25"),
-        LIST_3("rhs_GRD40_White")
+        LIST_3("rhs_VOG25"),
+        LIST_2("rhs_GRD40_White")
     };
 };
 class car : r
@@ -99,7 +99,7 @@ class smg : r
     scope[] = {};
     magazines[] =
     {
-        LIST_6("rhs_30Rnd_545x39_AK"),
+        LIST_4("rhs_30Rnd_545x39_AK"),
         "rhs_mag_rgn",
         LIST_2("rhs_mag_rdg2_white")
     };
@@ -344,7 +344,6 @@ class sp : ftl
 {
     displayName = "Spotter";
     uniform[] = {"rhs_uniform_gorka_r_y"};
-    vest[] = {"rhs_6b23_digi_sniper"};
     radios[] = {"ACRE_PRC117F"};
     linkedItems[] += {"Leupold_Mk4"};
     items[] += {

@@ -63,7 +63,7 @@ class r : baseMan
     attachment[] = {"hlc_muzzle_snds_AUG"};
     magazines[] =
     {
-        LIST_8("30Rnd_556x45_Stanag"),
+        LIST_6("30Rnd_556x45_Stanag"),
         LIST_2("30Rnd_556x45_Stanag_Tracer_Red"),
         LIST_2("HandGrenade"),
         LIST_2("SmokeShell")

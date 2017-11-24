@@ -77,7 +77,7 @@ class g : r
     magazines[] +=
     {
         LIST_5("1Rnd_HE_Grenade_shell"),
-        LIST_3("1Rnd_Smoke_Grenade_shell")
+        LIST_2("1Rnd_Smoke_Grenade_shell")
     };
 };
 class car : r

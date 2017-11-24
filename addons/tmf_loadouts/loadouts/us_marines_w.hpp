@@ -63,7 +63,7 @@ class r : baseMan
     attachment[] = {"rhsusf_acc_wmx_bk"};
     magazines[] =
     {
-        LIST_8("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
+        LIST_6("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
         LIST_2("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
         LIST_2("HandGrenade"),
         LIST_2("SmokeShell")
@@ -350,7 +350,6 @@ class sn : r
 class sp : ftl
 {
     displayName = "Spotter";
-    vest[] = {"rhsusf_spc_marksman"};
     radios[] = {"ACRE_PRC117F"};
     linkedItems[] += {"Leupold_Mk4"};
     items[] += {
