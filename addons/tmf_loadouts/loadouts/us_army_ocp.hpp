@@ -58,7 +58,7 @@ class r : baseMan
     headgear[] = {"rhsusf_ach_helmet_headset_ocp"};
     vest[] = {"rhsusf_iotv_ocp_Rifleman"};
     backpack[] = {"rhsusf_assault_eagleaiii_ocp"};
-    primaryWeapon[] = {"rhs_weap_hk416d145"};
+    primaryWeapon[] = {"rhs_weap_m4a1_carryhandle"};
     scope[] = {"rhsusf_acc_eotech_552"};
     attachment[] = {"rhsusf_acc_wmx_bk"};
     magazines[] =
@@ -73,7 +73,7 @@ class g : r
 {
     displayName = "Grenadier";
     vest[] = {"rhsusf_iotv_ocp_Grenadier"};
-    primaryWeapon[] = {"rhs_weap_hk416d145_m320"};
+    primaryWeapon[] = {"rhs_weap_m4a1_carryhandle_m203"};
     magazines[] +=
     {
         LIST_5("1Rnd_HE_Grenade_shell"),
@@ -83,7 +83,7 @@ class g : r
 class car : r
 {
     displayName = "Carabinier";
-    primaryWeapon[] = {"rhs_weap_hk416d10"};
+    primaryWeapon[] = {"rhs_weap_m4a1_carryhandle"};
     magazines[] =
     {
         LIST_8("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
@@ -130,10 +130,10 @@ class sl : ftl
 {
     displayName = "Squad Leader";
     vest[] = {"rhsusf_iotv_ocp_Squadleader"};
-    sidearmWeapon[] = {"hlc_Pistol_M11A1"};
+    sidearmWeapon[] = {"rhsusf_weap_m9"};
     magazines[] +=
     {
-        LIST_3("hlc_13Rnd_9x19_B_P228")
+        LIST_3("rhsusf_mag_15Rnd_9x19_JHP")
     };
 };
 class co : sl
@@ -148,17 +148,15 @@ class jtac : co
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    primaryWeapon[] = {"rhs_weap_m27iar"};
-    scope[] = {"rhsusf_acc_ACOG3"};
-    sidearmWeapon[] = {"hlc_Pistol_M11A1"};
-    bipod[] = {"rhsusf_acc_harris_bipod"};
+    primaryWeapon[] = {"rhs_weap_m249_pip_S_vfg"};
+    scope[] = {"rhsusf_acc_ELCAN"};
+    sidearmWeapon[] = {"rhsusf_weap_m9"};
     magazines[] =
     {
-        LIST_8("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
-        LIST_2("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
+		LIST_6("rhsusf_100Rnd_556x45_soft_pouch"),
         "HandGrenade",
         "SmokeShell",
-        LIST_4("hlc_13Rnd_9x19_B_P228")
+        LIST_4("rhsusf_mag_15Rnd_9x19_JHP")
     };
 };
 class aar : r
@@ -166,8 +164,7 @@ class aar : r
     displayName = "Assistant Automatic Rifleman";
     backpackItems[] =
     {
-        LIST_6("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
-        "UK3CB_BAF_556_200Rnd_T"
+		LIST_4("rhsusf_100Rnd_556x45_soft_pouch")
     };
     linkedItems[] += {"Binocular"};
 };
@@ -201,7 +198,7 @@ class mmgg : ar
         LIST_2("rhsusf_100Rnd_762x51_m62_tracer"),
         "HandGrenade",
         "SmokeShell",
-        LIST_4("hlc_13Rnd_9x19_B_P228")
+        LIST_4("rhsusf_mag_15Rnd_9x19_JHP")
     };
 };
 class mmgac : r
@@ -278,26 +275,17 @@ class hatag : r
 class mtrg : r
 {
     displayName = "Mortar Gunner";
-    backPack[] = {"B_Mortar_01_weapon_F"};
-    items[] += {
-	#include "mortaritems.hpp"
-	};
+    backPack[] = {"rhs_M252_Gun_Bag"};
 };
 class mtrac : r
 {
     displayName = "Mortar Ammo Carrier";
-    backPack[] = {"B_Mortar_01_weapon_F"};
-    items[] += {
-	#include "mortaritems.hpp"
-	};
+    backPack[] = {"rhs_M252_Gun_Bag"};
 };
 class mtrag : r
 {
     displayName = "Mortar Assistant Gunner";
-    backPack[] = {"B_Mortar_01_support_F"};
-    items[] += {
-	#include "mortaritems.hpp"
-	};
+    backPack[] = {"rhs_M252_Bipod_Bag"};
 };
 class samg : r
 {
@@ -323,12 +311,12 @@ class sn : r
     primaryWeapon[] = {"rhs_weap_XM2010"};
     scope[] = {"rhsusf_acc_LEUPOLDMK4_2"};
     bipod[] = {"rhsusf_acc_harris_bipod"};
-    sidearmWeapon[] = {"hlc_Pistol_M11A1"};
+    sidearmWeapon[] = {"rhsusf_weap_m9"};
     magazines[] =
     {
         LIST_9("rhsusf_5Rnd_300winmag_xm2010"),
         LIST_2("HandGrenade"),
-        LIST_4("hlc_13Rnd_9x19_B_P228")
+        LIST_4("rhsusf_mag_15Rnd_9x19_JHP")
     };
     items[] += {
 	#include "sniperitems.hpp"
@@ -394,10 +382,10 @@ class jp : baseMan
     headgear[] = {"FIR_JHMCS_II"};
     backPack[] = {"B_AssaultPack_blk"};
     radios[] = {"ACRE_PRC117F"};
-    sidearmWeapon[] = {"hlc_Pistol_M11A1"};
+    sidearmWeapon[] = {"rhsusf_weap_m9"};
     magazines[] =
     {
-        LIST_4("hlc_13Rnd_9x19_B_P228")
+        LIST_4("rhsusf_mag_15Rnd_9x19_JHP")
     };
     linkedItems[] = {"ItemMap","ItemGPS","ItemCompass","ItemWatch"};
 };

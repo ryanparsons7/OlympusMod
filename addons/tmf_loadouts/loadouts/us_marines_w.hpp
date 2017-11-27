@@ -55,10 +55,10 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    headgear[] = {"rhsusf_mich_helmet_marpatwd_norotos_arc_headset"};
+    headgear[] = {"rhsusf_lwh_helmet_marpatwd"};
     vest[] = {"rhsusf_spc_rifleman"};
     backpack[] = {"rhsusf_assault_eagleaiii_coy"};
-    primaryWeapon[] = {"rhs_weap_hk416d145"};
+    primaryWeapon[] = {"rhs_weap_m4_carryhandle"};
     scope[] = {"rhsusf_acc_eotech_552"};
     attachment[] = {"rhsusf_acc_wmx_bk"};
     magazines[] =
@@ -73,7 +73,7 @@ class g : r
 {
     displayName = "Grenadier";
     vest[] = {"rhsusf_iotv_ocp_Grenadier"};
-    primaryWeapon[] = {"rhs_weap_hk416d145_m320"};
+    primaryWeapon[] = {"rhs_weap_m4a1_carryhandle_m203"};
     magazines[] +=
     {
         LIST_5("1Rnd_HE_Grenade_shell"),
@@ -83,7 +83,7 @@ class g : r
 class car : r
 {
     displayName = "Carabinier";
-    primaryWeapon[] = {"rhs_weap_hk416d10"};
+    primaryWeapon[] = {"rhs_weap_m4_carryhandle"};
     magazines[] =
     {
         LIST_8("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
@@ -290,26 +290,17 @@ class hatag : r
 class mtrg : r
 {
     displayName = "Mortar Gunner";
-    backPack[] = {"B_Mortar_01_weapon_F"};
-    items[] += {
-	#include "mortaritems.hpp"
-	};
+    backPack[] = {"rhs_M252_Gun_Bag"};
 };
 class mtrac : r
 {
     displayName = "Mortar Ammo Carrier";
-    backPack[] = {"B_Mortar_01_weapon_F"};
-    items[] += {
-	#include "mortaritems.hpp"
-	};
+    backPack[] = {"rhs_M252_Gun_Bag"};
 };
 class mtrag : r
 {
     displayName = "Mortar Assistant Gunner";
-    backPack[] = {"B_Mortar_01_support_F"};
-    items[] += {
-	#include "mortaritems.hpp"
-	};
+    backPack[] = {"rhs_M252_Bipod_Bag"};
 };
 class samg : r
 {

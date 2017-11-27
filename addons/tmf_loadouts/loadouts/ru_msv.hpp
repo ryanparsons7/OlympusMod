@@ -281,26 +281,17 @@ class hatag : r
 class mtrg : r
 {
     displayName = "Mortar Gunner";
-    backPack[] = {"B_Mortar_01_weapon_F"};
-    items[] += {
-	#include "mortaritems.hpp"
-	};
+    backPack[] = {"RHS_Podnos_Gun_Bag"};
 };
 class mtrac : r
 {
     displayName = "Mortar Ammo Carrier";
-    backPack[] = {"B_Mortar_01_weapon_F"};
-    items[] += {
-	#include "mortaritems.hpp"
-	};
+    backPack[] = {"RHS_Podnos_Gun_Bag"};
 };
 class mtrag : r
 {
     displayName = "Mortar Assistant Gunner";
-    backPack[] = {"B_Mortar_01_support_F"};
-    items[] += {
-	#include "mortaritems.hpp"
-	};
+    backPack[] = {"RHS_Podnos_Bipod_Bag"};
 };
 class samg : r
 {
