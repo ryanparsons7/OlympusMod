@@ -32,25 +32,25 @@ class CfgLoadouts
     };
     class ru_msv
     {
-        displayName = "Russian Federation MSV"
+        displayName = "Russian Federation MSV";
 		category = "Russian";
         #include "loadouts\ru_msv.hpp"
     };
     class us_army_ocp
     {
-        displayName = "US Army OCP"
+        displayName = "US Army OCP";
 		category = "American";
         #include "loadouts\us_army_ocp.hpp"
     };
     class us_marines_d
     {
-        displayName = "US Marines Desert"
+        displayName = "US Marines Desert";
 		category = "American";
         #include "loadouts\us_marines_d.hpp"
     };
     class us_marines_w
     {
-        displayName = "US Marines Woodland"
+        displayName = "US Marines Woodland";
 		category = "American";
         #include "loadouts\us_marines_w.hpp"
     };
