@@ -42,6 +42,18 @@ class CfgLoadouts
 		category = "American";
         #include "loadouts\us_army_ocp.hpp"
     };
+    class us_marines_d_2020
+    {
+        displayName = "US Marines Desert 2020s";
+		category = "American";
+        #include "loadouts\us_marines_d_2020.hpp"
+    };
+    class us_marines_w_2020
+    {
+        displayName = "US Marines Woodland 2020s";
+		category = "American";
+        #include "loadouts\us_marines_w_2020.hpp"
+    };
     class us_marines_d
     {
         displayName = "US Marines Desert";
