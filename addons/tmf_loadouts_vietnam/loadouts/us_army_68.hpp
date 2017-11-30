@@ -71,16 +71,21 @@ class r : baseMan
 class g : r
 {
     displayName = "Grenadier";
-    primaryWeapon[] = {"uns_m16a1_m203"};
-    magazines[] +=
+    primaryWeapon[] = {"uns_m79"};
+    magazines[] =
     {
-        LIST_1("uns_m406vest"),
-        LIST_3("uns_1Rnd_Smoke_40mm")
+		LIST_1("uns_m406vest"),
+		LIST_2("uns_1Rnd_AB_M397"),
+		LIST_1("uns_40mm_green"),
+		LIST_1("uns_40mm_red"),
+		LIST_3("uns_m1911mag"),
+        LIST_2("uns_m61gren"),
+        LIST_2("uns_m18white")
     };
 };
-class car : r
+class shotgun : r
 {
-    displayName = "Carabinier";
+    displayName = "Shotgunner";
     primaryWeapon[] = {"uns_model12"};
     magazines[] =
     {
@@ -112,14 +117,13 @@ class smg : r
         LIST_2("uns_m18white")
     };
 };
-class ftl : g
+class ftl : r
 {
     displayName = "Fireteam Leader";
     magazines[] +=
     {
-        LIST_2("uns_1Rnd_SmokeGreen_40mm"),
-        LIST_2("uns_1Rnd_SmokeRed_40mm"),
-        LIST_2("uns_m18Green")
+        LIST_2("uns_m18Green"),
+        LIST_2("uns_m18Red")
 	};
 };
 class sl : ftl
@@ -158,7 +162,7 @@ class aar : r
     };
     linkedItems[] += {"Binocular"};
 };
-class rat : car
+class rat : r
 {
     displayName = "Rifleman (AT)";
     secondaryWeapon[] = {"uns_m72"};
