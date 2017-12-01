@@ -84,9 +84,10 @@ class car : r
         LIST_2("LIB_US_M18")
     };
 };
-class m : car
+class m : r
 {
     displayName = "Medic";
+    backPack[] = {"B_LIB_US_M36"};
     headgear[] = {"fow_h_us_m1_medic"};
     vest[] = {"fow_v_us_medic"};
     backpackItems[] += {
@@ -122,7 +123,6 @@ class sl : ftl
 {
     displayName = "Squad Leader";
     headgear[] = {"fow_h_us_m1_officer"};
-    backPack[] = {"fow_b_us_radio"};
 };
 class co : sl
 {
@@ -143,7 +143,7 @@ class ar : r
         "LIB_US_M18"
     };
 };
-class aar : car
+class aar : r
 {
     displayName = "Assistant Automatic Rifleman";
     vest[] = {"fow_v_us_asst_mg"};
@@ -153,12 +153,12 @@ class aar : car
     };
     linkedItems[] += {"Binocular"};
 };
-class rat : car
+class rat : r
 {
     displayName = "Rifleman (AT)";
     secondaryWeapon[] = {"fow_w_m1a1_bazooka"};
     backpackItems[] = {
-        LIST_1("fow_1Rnd_m6a1")
+        LIST_2("fow_1Rnd_m6a1")
 	};
 };
 class mmgg : ar
@@ -168,7 +168,7 @@ class mmgg : ar
     magazines[] =
     {
         LIST_3("fow_100Rnd_762x63"),
-		LIST_3("fow_7Rnd_45acp"),
+		LIST_2("fow_7Rnd_45acp"),
         "fow_e_mk2",
         "LIB_US_M18"
     };
@@ -176,17 +176,19 @@ class mmgg : ar
 class mmgac : r
 {
     displayName = "MMG Ammo Carrier";
+    backPack[] = {"B_LIB_US_M36"};
     backpackItems[] =
     {
-        LIST_3("fow_100Rnd_762x63")
+        LIST_2("fow_100Rnd_762x63")
     };
 };
 class mmgag : aar
 {
     displayName = "MMG Assistant Gunner";
+    backPack[] = {"B_LIB_US_M36"};
     backpackItems[] =
     {
-        LIST_3("fow_100Rnd_762x63")
+        LIST_2("fow_100Rnd_762x63")
     };
     linkedItems[] += {"Binocular"};
 };
@@ -233,14 +235,14 @@ class hatg : r
     displayName = "HAT Gunner";
     secondaryWeapon[] = {"fow_w_m1a1_bazooka"};
     backpackItems[] = {
-        LIST_3("fow_1Rnd_m6a1")
+        LIST_2("fow_1Rnd_m6a1")
     };
 };
 class hatac : r
 {
     displayName = "HAT Ammo Carrier";
     backpackItems[] = {
-        LIST_3("fow_1Rnd_m6a1")
+        LIST_2("fow_1Rnd_m6a1")
     };
 };
 class hatag : r
@@ -297,6 +299,7 @@ class vc : smg
     uniform[] = {"fow_u_us_pilot_01"};
     vest[] = {"fow_v_us_thompson"};
     headgear[] = {"fow_h_us_m1_closed"};
+    linkedItems[] += {"Binocular"};
 };
 class vd : smg
 {
@@ -304,7 +307,7 @@ class vd : smg
     uniform[] = {"fow_u_us_pilot_01"};
     vest[] = {"fow_v_us_thompson"};
     headgear[] = {"fow_h_us_m1_closed"};
-    backpackItems[] = {"ToolKit"};
+    linkedItems[] += {"Binocular"};
 };
 class vg : smg
 {
@@ -312,6 +315,7 @@ class vg : smg
     uniform[] = {"fow_u_us_pilot_01"};
     vest[] = {"fow_v_us_thompson"};
     headgear[] = {"fow_h_us_m1_closed"};
+    linkedItems[] += {"Binocular"};
 };
 class jp : baseMan
 {
