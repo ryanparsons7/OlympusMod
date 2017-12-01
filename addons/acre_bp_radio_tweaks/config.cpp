@@ -21,7 +21,7 @@ class CfgWeapons {
 	
 	class ACRE_PRC77: ACRE_BaseRadio {
         class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = 120;
+            mass = 0;
          };
     };
 };
