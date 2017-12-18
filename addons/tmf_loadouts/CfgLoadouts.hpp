@@ -66,4 +66,10 @@ class CfgLoadouts
 		category = "American";
         #include "loadouts\us_marines_w.hpp"
     };
+    class chdkz_insurgents
+    {
+        displayName = "ChDKZ Insurgents";
+		category = "Russian";
+        #include "loadouts\chdkz_insurgents.hpp"
+    };
 };
