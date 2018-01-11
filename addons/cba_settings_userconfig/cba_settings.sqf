@@ -48,7 +48,7 @@ force force acre_sys_core_terrainLoss = 0.5;
 force force acre_sys_core_revealToAI = false;
 
 force force ace_medical_blood_enabledFor = 2;
-force force ace_common_checkPBOsAction = 1;
+force force ace_common_checkPBOsAction = 0;
 force force ace_common_checkPBOsCheckAll = true;
 force force ace_common_checkPBOsWhitelist = "[""aar_main""]";
 force force ace_common_settingFeedbackIcons = 1;
