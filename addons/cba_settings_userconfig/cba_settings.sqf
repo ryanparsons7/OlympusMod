@@ -1,7 +1,7 @@
 force force niarms_magSwitch = true;
 force force asr_ai3_control_pgaistamina = 0;
 force force asr_ai3_control_onteamswitchleader = true;
-force force asr_ai3_main_factionskip_str = "['CIV_F','CIV_IDAP_F','LOP_AFR_Civ','LOP_CHR_Civ','LOP_TAK_Civ']";
+force force asr_ai3_main_factionskip_str = "['CIV_F','CIV_IDAP_F','LOP_AFR_Civ','LOP_CHR_Civ','LOP_TAK_Civ','Ryanzombiesfactionopfor','Ryanzombiesfaction','Ryanzombiesfactionblufor']";
 force force asr_ai3_rearming_rearm = 40;
 force force asr_ai3_rearming_rearm_mags = 3;
 force force asr_ai3_rearming_rearm_fak = 1;
@@ -322,3 +322,4 @@ force force ace_arsenal_fontHeight = 4.5;
 force force ace_arsenal_allowDefaultLoadouts = true;
 force force ace_arsenal_allowSharedLoadouts = true;
 force force ace_arsenal_EnableRPTLog = false;
+force force ace_common_allowFadeMusic = true;
