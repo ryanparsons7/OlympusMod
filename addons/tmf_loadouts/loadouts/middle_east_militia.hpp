@@ -89,7 +89,7 @@ class car : r
 class m : car
 {
     displayName = "Medic";
-    backPack[] = {"rhs_sidor"};
+    backPack[] = {"CUP_B_AlicePack_Khaki"};
     backpackItems[] = {
         #include "medicalbackpack.hpp"
     };
