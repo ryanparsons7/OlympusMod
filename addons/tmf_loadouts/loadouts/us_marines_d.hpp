@@ -130,6 +130,7 @@ class sl : ftl
 {
     displayName = "Squad Leader";
     vest[] = {"rhsusf_spc_squadleader"};
+    backpack[] = {"TFAR_rt1523g_big_bwmod"};
     sidearmWeapon[] = {"hlc_Pistol_M11A1"};
     magazines[] +=
     {
@@ -139,7 +140,6 @@ class sl : ftl
 class co : sl
 {
     displayName = "Platoon Leader";
-    radios[] = {"ACRE_PRC117F"};
 };
 class jtac : co
 {
@@ -217,6 +217,7 @@ class mmgac : r
 class mmgag : aar
 {
     displayName = "MMG Assistant Gunner";
+    backpack[] = {"TFAR_rt1523g_big_bwmod"};
     backpackItems[] =
     {
         LIST_3("rhsusf_100Rnd_762x51")
@@ -231,13 +232,13 @@ class hmgg : r
 };
 class hmgac : r
 {
-    displayName = "HMG Ammo Carrier";
-    backPack[] = {"RHS_M2_Gun_Bag"};
+    displayName = "HMG Assistant";
+    backPack[] = {"RHS_M2_Tripod_Bag"};
 };
 class hmgag : r
 {
-    displayName = "HMG Assistant Gunner";
-    backPack[] = {"RHS_M2_Tripod_Bag"};
+    displayName = "HMG Team Leader";
+    backpack[] = {"TFAR_rt1523g_big_bwmod"};
     linkedItems[] += {"Binocular"};
 };
 class matg : r
@@ -263,6 +264,7 @@ class matac : r
 class matag : r
 {
     displayName = "MAT Assistant Gunner";
+    backpack[] = {"TFAR_rt1523g_big_bwmod"};
     linkedItems[] += {"Binocular"};
 };
 class hatg : r
@@ -285,6 +287,7 @@ class hatac : r
 class hatag : r
 {
     displayName = "HAT Assistant Gunner";
+    backpack[] = {"TFAR_rt1523g_big_bwmod"};
     linkedItems[] += {"Binocular"};
 };
 class mtrg : r
@@ -294,13 +297,13 @@ class mtrg : r
 };
 class mtrac : r
 {
-    displayName = "Mortar Ammo Carrier";
-    backPack[] = {"rhs_M252_Gun_Bag"};
+    displayName = "Mortar Assistant";
+    backPack[] = {"rhs_M252_Bipod_Bag"};
 };
 class mtrag : r
 {
-    displayName = "Mortar Assistant Gunner";
-    backPack[] = {"rhs_M252_Bipod_Bag"};
+    displayName = "Mortar Team Leader";
+    backpack[] = {"TFAR_rt1523g_big_bwmod"};
 };
 class samg : r
 {
@@ -314,6 +317,7 @@ class samg : r
 class samag : r
 {
     displayName = "AA Assistant Missile Specialist";
+    backpack[] = {"TFAR_rt1523g_big_bwmod"};
     backpackItems[] =
     {
         LIST_1("rhs_fim92_mag")
@@ -341,8 +345,8 @@ class sn : r
 class sp : ftl
 {
     displayName = "Spotter";
-    radios[] = {"ACRE_PRC117F"};
     linkedItems[] += {"Leupold_Mk4"};
+    backpack[] = {"TFAR_rt1523g_big_bwmod"};
     items[] += {
 	#include "sniperitems.hpp"
 	};
@@ -353,7 +357,6 @@ class vc : car
     vest[] = {"rhsusf_spc_crewman"};
     headgear[] = {"rhsusf_cvc_helmet"};
     goggles[] = {"rhs_ess_black"};
-    radios[] = {"ACRE_PRC117F"};
 	hmd[] = {};
 };
 class vd : car
@@ -378,7 +381,6 @@ class pp : car
     displayName = "Helicopter Pilot";
     vest[] = {"rhsusf_spc_crewman"};
     headgear[] = {"rhsusf_hgu56p"};
-    radios[] = {"ACRE_PRC117F"};
 };
 class pcc : pp
 {
@@ -398,7 +400,6 @@ class jp : baseMan
     vest[] = {"FIR_pilot_vest"};
     headgear[] = {"FIR_JHMCS_II"};
     backPack[] = {"B_AssaultPack_blk"};
-    radios[] = {"ACRE_PRC117F"};
     sidearmWeapon[] = {"hlc_Pistol_M11A1"};
     magazines[] =
     {
