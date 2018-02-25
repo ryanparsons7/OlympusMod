@@ -55,8 +55,8 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    uniform[] = {"fow_u_us_m41_01_private"};
-    headgear[] = {"fow_h_us_m1"};
+    uniform[] = {"fow_u_us_hbt_01_private","fow_u_us_hbt_02_private"};
+    headgear[] = {"fow_h_us_m1","fow_h_us_m1_closed","fow_h_us_m1_folded"};
     vest[] = {"fow_v_us_garand"};
     backpack[] = {"fow_b_us_bandoleer"};
     primaryWeapon[] = {"fow_w_m1_garand"};

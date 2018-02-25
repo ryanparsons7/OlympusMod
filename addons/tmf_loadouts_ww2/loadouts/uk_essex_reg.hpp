@@ -39,7 +39,6 @@ class baseMan {// Weaponless baseclass
     linkedItems[] = {
         "ItemMap",
         "ItemCompass",
-        "ItemGPS",
         "ItemWatch"
     };
 
@@ -55,32 +54,28 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    uniform[] = {"fow_u_us_m41_01_private"};
-    headgear[] = {"fow_h_us_m1"};
-    vest[] = {"fow_v_us_garand"};
-    backpack[] = {"fow_b_us_bandoleer"};
-    primaryWeapon[] = {"fow_w_m1_garand"};
+    uniform[] = {"fow_u_uk_bd40_01_private"};
+    headgear[] = {"fow_h_uk_mk2"};
+    vest[] = {"fow_v_uk_base_green"};
+    backpack[] = {"fow_b_uk_bergenpack"};
+    primaryWeapon[] = {"fow_w_leeenfield_no4mk1"};
     magazines[] =
     {
-        LIST_10("fow_8Rnd_762x63")
+        LIST_10("fow_10Rnd_303")
     };
 };
 class g : r
 {
     displayName = "Rifleman (GL)";
-    vest[] = {"fow_v_us_grenade"};
     magazines[] +=
     {
-        LIST_6("fow_1Rnd_m9a1"),
-        LIST_2("fow_e_mk2")
+        LIST_2("fow_e_no36mk1")
     };
 };
 class m : r
 {
     displayName = "Medic";
-    headgear[] = {"fow_h_us_m1_medic"};
-    vest[] = {"fow_v_us_medic"};
-    backPack[] = {"B_LIB_USA_Backpack_Vide"};
+    backPack[] = {"fow_b_uk_bergenpack_medic"};
     backpackItems[] += {
         #include "medicalbackpack.hpp"
     };
@@ -88,7 +83,6 @@ class m : r
 class smg : r
 {
     displayName = "Submachinegunner";
-    vest[] = {"fow_v_us_thompson"};
     primaryWeapon[] = {"fow_w_m3"};
     magazines[] =
     {
@@ -102,7 +96,7 @@ class asl : r
     magazines[] =
     {
         LIST_5("fow_30Rnd_45acp"),
-        LIST_2("fow_e_mk2"),
+        LIST_2("fow_e_no36mk1"),
         LIST_1("SmokeShellGreen"),
         LIST_2("SmokeShell")
     };
@@ -111,14 +105,11 @@ class asl : r
 class sl : asl
 {
     displayName = "Squad Leader";
-    headgear[] = {"fow_h_us_m1_nco"};
     backPack[] = {"B_LIB_US_Radio"};
-    vest[] = {"fow_v_us_thompson_nco"};
 };
 class co : sl
 {
     displayName = "Platoon Leader";
-    headgear[] = {"fow_h_us_m1_officer"};
 };
 class ps : co
 {
@@ -127,53 +118,50 @@ class ps : co
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    vest[] = {"fow_v_us_bar"};
-    primaryWeapon[] = {"fow_w_m1918a2_acc"};
-    attachment[] = {"fow_w_acc_m1918a2_bipod"};
+    primaryWeapon[] = {"fow_w_bren"};
     magazines[] =
     {
-		LIST_10("fow_20Rnd_762x63"),
-		LIST_2("fow_e_mk2")
+		LIST_6("fow_30Rnd_303_bren"),
+		LIST_2("fow_e_no36mk1")
     };
 };
 class aar : r
 {
     displayName = "Assistant Automatic Rifleman";
-    vest[] = {"fow_v_us_asst_mg"};
-    backPack[] = {"fow_b_us_m1928_asst_bar"};
+    backPack[] = {"fow_b_uk_bergenpack"};
     backpackItems[] =
     {
-		LIST_6("fow_20Rnd_762x63")
+		LIST_10("fow_30Rnd_303_bren")
     };
     linkedItems[] += {"Binocular"};
 };
 class mgg : ar
 {
     displayName = "MG Gunner";
-    primaryWeapon[] = {"fow_w_m1919a6"};
+    primaryWeapon[] = {"fow_w_bren"};
     magazines[] =
     {
-        LIST_6("fow_50Rnd_762x63")
+        LIST_6("fow_30Rnd_303_bren")
     };
 };
 class mgag : r
 {
     displayName = "MG Assistant Gunner";
-    backPack[] = {"fow_b_us_m1928_asst_bar"};
+    backPack[] = {"fow_b_uk_bergenpack"};
     backpackItems[] =
     {
-        LIST_3("fow_50Rnd_762x63")
+        LIST_10("fow_30Rnd_303_bren")
     };
 };
 class hmgg : r
 {
     displayName = "HMG Gunner";
-    backPack[] = {"fow_b_usa_m1919_weapon"};
+    backPack[] = {"fow_b_uk_vickers_weapon"};
 };
 class hmgag : r
 {
     displayName = "HMG Assistant Gunner";
-    backPack[] = {"fow_b_usa_m1919_support"};
+    backPack[] = {"fow_b_uk_vickers_support"};
 };
 class atg : r
 {
@@ -226,20 +214,17 @@ class mtrac : r
 class sn : r
 {
     displayName = "Sniper";
-    vest[] = {"fow_v_us_45"};
-    headgear[] = {"fow_h_us_m1_net"};
-    primaryWeapon[] = {"fow_w_m1903A1_sniper"};
-    sidearmWeapon[] = {"fow_w_m1911"};
+    primaryWeapon[] = {"LEN_SMLE_No4Mk1T"};
+    sidearmWeapon[] = {"fow_w_webley"};
     magazines[] =
     {
-        LIST_7("fow_5Rnd_762x63"),
-        LIST_4("fow_7Rnd_45acp")
+        LIST_9("LEN_10Rnd_303"),
+        LIST_4("fow_6Rnd_455")
     };
 };
 class sp : sl
 {
     displayName = "Spotter";
-    headgear[] = {"fow_h_us_m1_net"};
 };
 class vc : smg
 {
@@ -262,10 +247,10 @@ class p : baseMan
     vest[] = {"V_LIB_US_LifeVest"};
     headgear[] = {"H_LIB_US_Helmet_Pilot"};
     backPack[] = {"B_LIB_US_TypeA3"};
-    sidearmWeapon[] = {"LIB_Colt_M1911"};
+    sidearmWeapon[] = {"fow_w_webley"};
     magazines[] =
     {
-        LIST_3("LIB_7Rnd_45ACP")
+        LIST_3("fow_6Rnd_455")
     };
     linkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
 };

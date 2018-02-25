@@ -39,7 +39,6 @@ class baseMan {// Weaponless baseclass
     linkedItems[] = {
         "ItemMap",
         "ItemCompass",
-        "ItemGPS",
         "ItemWatch"
     };
 
@@ -55,32 +54,28 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    uniform[] = {"fow_u_us_m41_01_private"};
-    headgear[] = {"fow_h_us_m1"};
-    vest[] = {"fow_v_us_garand"};
-    backpack[] = {"fow_b_us_bandoleer"};
-    primaryWeapon[] = {"fow_w_m1_garand"};
+    uniform[] = {"U_LIB_SOV_Strelok"};
+    headgear[] = {"H_LIB_SOV_RA_Helmet"};
+    vest[] = {"V_LIB_SOV_RA_MosinBelt"};
+    backpack[] = {"B_LIB_SOV_RA_GasBag"};
+    primaryWeapon[] = {"LIB_M9130"};
     magazines[] =
     {
-        LIST_10("fow_8Rnd_762x63")
+        LIST_12("LIB_5Rnd_762x54")
     };
 };
 class g : r
 {
     displayName = "Rifleman (GL)";
-    vest[] = {"fow_v_us_grenade"};
     magazines[] +=
     {
-        LIST_6("fow_1Rnd_m9a1"),
         LIST_2("fow_e_mk2")
     };
 };
 class m : r
 {
     displayName = "Medic";
-    headgear[] = {"fow_h_us_m1_medic"};
-    vest[] = {"fow_v_us_medic"};
-    backPack[] = {"B_LIB_USA_Backpack_Vide"};
+    backPack[] = {"B_LIB_SOV_RA_MedicalBag"};
     backpackItems[] += {
         #include "medicalbackpack.hpp"
     };
@@ -88,20 +83,21 @@ class m : r
 class smg : r
 {
     displayName = "Submachinegunner";
-    vest[] = {"fow_v_us_thompson"};
-    primaryWeapon[] = {"fow_w_m3"};
+    vest[] = {"V_LIB_SOV_RA_PPShBelt"};
+    primaryWeapon[] = {"LIB_PPSh41_d"};
     magazines[] =
     {
-        LIST_5("fow_30Rnd_45acp")
+        LIST_4("LIB_71Rnd_762x25")
     };
 };
 class asl : r
 {
     displayName = "Assistant Squad Leader Leader";
-    primaryWeapon[] = {"fow_w_m1a1_thompson"};
+    uniform[] = {"U_LIB_SOV_Sergeant"};
+    primaryWeapon[] = {"LIB_PPSh41_m"};
     magazines[] =
     {
-        LIST_5("fow_30Rnd_45acp"),
+        LIST_5("LIB_35Rnd_762x25"),
         LIST_2("fow_e_mk2"),
         LIST_1("SmokeShellGreen"),
         LIST_2("SmokeShell")
@@ -111,14 +107,11 @@ class asl : r
 class sl : asl
 {
     displayName = "Squad Leader";
-    headgear[] = {"fow_h_us_m1_nco"};
-    backPack[] = {"B_LIB_US_Radio"};
-    vest[] = {"fow_v_us_thompson_nco"};
+    backPack[] = {"B_LIB_SOV_RA_Radio"};
 };
 class co : sl
 {
     displayName = "Platoon Leader";
-    headgear[] = {"fow_h_us_m1_officer"};
 };
 class ps : co
 {
@@ -127,12 +120,11 @@ class ps : co
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    vest[] = {"fow_v_us_bar"};
-    primaryWeapon[] = {"fow_w_m1918a2_acc"};
-    attachment[] = {"fow_w_acc_m1918a2_bipod"};
+    vest[] = {"V_LIB_SOV_RA_MGBelt"};
+    primaryWeapon[] = {"LIB_DP28"};
     magazines[] =
     {
-		LIST_10("fow_20Rnd_762x63"),
+		LIST_5("LIB_47Rnd_762x54"),
 		LIST_2("fow_e_mk2")
     };
 };
@@ -140,40 +132,40 @@ class aar : r
 {
     displayName = "Assistant Automatic Rifleman";
     vest[] = {"fow_v_us_asst_mg"};
-    backPack[] = {"fow_b_us_m1928_asst_bar"};
+    backPack[] = {"B_LIB_SOV_RA_MGAmmoBag"};
     backpackItems[] =
     {
-		LIST_6("fow_20Rnd_762x63")
+		LIST_5("LIB_47Rnd_762x54")
     };
     linkedItems[] += {"Binocular"};
 };
 class mgg : ar
 {
     displayName = "MG Gunner";
-    primaryWeapon[] = {"fow_w_m1919a6"};
+    primaryWeapon[] = {"LIB_DT_OPTIC"};
     magazines[] =
     {
-        LIST_6("fow_50Rnd_762x63")
+        LIST_7("LIB_63Rnd_762x54")
     };
 };
 class mgag : r
 {
     displayName = "MG Assistant Gunner";
-    backPack[] = {"fow_b_us_m1928_asst_bar"};
+    backPack[] = {"B_LIB_SOV_RA_MGAmmoBag"};
     backpackItems[] =
     {
-        LIST_3("fow_50Rnd_762x63")
+        LIST_4("LIB_63Rnd_762x54")
     };
 };
 class hmgg : r
 {
     displayName = "HMG Gunner";
-    backPack[] = {"fow_b_usa_m1919_weapon"};
+    backPack[] = {"LIB_Maxim_Bar"};
 };
 class hmgag : r
 {
     displayName = "HMG Assistant Gunner";
-    backPack[] = {"fow_b_usa_m1919_support"};
+    backPack[] = {"LIB_Maxim_Bag"};
 };
 class atg : r
 {
@@ -226,25 +218,29 @@ class mtrac : r
 class sn : r
 {
     displayName = "Sniper";
-    vest[] = {"fow_v_us_45"};
-    headgear[] = {"fow_h_us_m1_net"};
-    primaryWeapon[] = {"fow_w_m1903A1_sniper"};
-    sidearmWeapon[] = {"fow_w_m1911"};
+    headgear[] = {};
+    uniform[] = {"U_LIB_SOV_Sniper"};
+    vest[] = {"V_LIB_SOV_RA_SniperVest"};
+    primaryWeapon[] = {"LIB_M9130PU"};
+    sidearmWeapon[] = {"LIB_TT33"};
     magazines[] =
     {
-        LIST_7("fow_5Rnd_762x63"),
-        LIST_4("fow_7Rnd_45acp")
+        LIST_9("LIB_5Rnd_762x54"),
+        LIST_4("LIB_8Rnd_762x25")
     };
 };
 class sp : sl
 {
     displayName = "Spotter";
-    headgear[] = {"fow_h_us_m1_net"};
+    headgear[] = {};
+    uniform[] = {"U_LIB_SOV_Sniper"};
 };
 class vc : smg
 {
     displayName = "Vehicle Commander";
-    headgear[] = {"H_LIB_US_Helmet_Tank"};
+    uniform[] = {"U_LIB_SOV_Tank_ryadovoi"};
+    vest[] = {"V_LIB_SOV_RA_Belt"};
+    headgear[] = {"H_LIB_SOV_TankHelmet"};
     goggles[] = {"fow_g_gloves5"};
 };
 class vd : vc
