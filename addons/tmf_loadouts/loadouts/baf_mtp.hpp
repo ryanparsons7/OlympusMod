@@ -140,6 +140,7 @@ class sl : ftl
 class co : sl
 {
     displayName = "Platoon Leader";
+    radios[] = {"ACRE_PRC117F"};
 };
 class jtac : co
 {
@@ -216,7 +217,6 @@ class mmgac : r
 class mmgag : aar
 {
     displayName = "MMG Assistant Gunner";
-    backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Radio_H_A","UK3CB_BAF_B_Bergen_MTP_Radio_H_B","UK3CB_BAF_B_Bergen_MTP_Radio_L_A","UK3CB_BAF_B_Bergen_MTP_Radio_L_B"};
     backpackItems[] =
     {
         LIST_3("UK3CB_BAF_762_100Rnd")
@@ -231,13 +231,13 @@ class hmgg : r
 };
 class hmgac : r
 {
-    displayName = "HMG Assistant";
-    backPack[] = {"RHS_M2_Tripod_Bag"};
+    displayName = "HMG Ammo Carrier";
+    backPack[] = {"RHS_M2_Gun_Bag"};
 };
 class hmgag : r
 {
-    displayName = "HMG Team Leader";
-    backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Radio_H_A","UK3CB_BAF_B_Bergen_MTP_Radio_H_B","UK3CB_BAF_B_Bergen_MTP_Radio_L_A","UK3CB_BAF_B_Bergen_MTP_Radio_L_B"};
+    displayName = "HMG Assistant Gunner";
+    backPack[] = {"RHS_M2_Tripod_Bag"};
     linkedItems[] += {"Binocular"};
 };
 class matg : r
@@ -253,7 +253,6 @@ class matac : r
 class matag : r
 {
     displayName = "MAT Assistant Gunner";
-    backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Radio_H_A","UK3CB_BAF_B_Bergen_MTP_Radio_H_B","UK3CB_BAF_B_Bergen_MTP_Radio_L_A","UK3CB_BAF_B_Bergen_MTP_Radio_L_B"};
     linkedItems[] += {"Binocular"};
 };
 class hatg : r
@@ -276,7 +275,6 @@ class hatac : r
 class hatag : r
 {
     displayName = "HAT Assistant Gunner";
-    backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Radio_H_A","UK3CB_BAF_B_Bergen_MTP_Radio_H_B","UK3CB_BAF_B_Bergen_MTP_Radio_L_A","UK3CB_BAF_B_Bergen_MTP_Radio_L_B"};
     linkedItems[] += {"Binocular"};
 };
 class mtrg : r
@@ -286,13 +284,13 @@ class mtrg : r
 };
 class mtrac : r
 {
-    displayName = "Mortar Assistant";
-    backPack[] = {"rhs_M252_Bipod_Bag"};
+    displayName = "Mortar Ammo Carrier";
+    backPack[] = {"rhs_M252_Gun_Bag"};
 };
 class mtrag : r
 {
-    displayName = "Mortar Team Leader";
-    backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Radio_H_A","UK3CB_BAF_B_Bergen_MTP_Radio_H_B","UK3CB_BAF_B_Bergen_MTP_Radio_L_A","UK3CB_BAF_B_Bergen_MTP_Radio_L_B"};
+    displayName = "Mortar Assistant Gunner";
+    backPack[] = {"rhs_M252_Bipod_Bag"};
 };
 class samg : r
 {
@@ -306,7 +304,6 @@ class samg : r
 class samag : r
 {
     displayName = "AA Assistant Missile Specialist";
-    backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Radio_H_A","UK3CB_BAF_B_Bergen_MTP_Radio_H_B","UK3CB_BAF_B_Bergen_MTP_Radio_L_A","UK3CB_BAF_B_Bergen_MTP_Radio_L_B"};
     backpackItems[] =
     {
         LIST_1("rhs_fim92_mag")
@@ -334,7 +331,7 @@ class sp : ftl
 {
     displayName = "Spotter";
     uniform[] = {"UK3CB_BAF_U_CombatUniform_MTP_Ghillie_RM"};
-    backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Radio_H_A","UK3CB_BAF_B_Bergen_MTP_Radio_H_B","UK3CB_BAF_B_Bergen_MTP_Radio_L_A","UK3CB_BAF_B_Bergen_MTP_Radio_L_B"};
+    radios[] = {"ACRE_PRC117F"};
     linkedItems[] += {"Leupold_Mk4"};
     items[] += {
 	#include "sniperitems.hpp"
@@ -346,6 +343,7 @@ class vc : smg
     vest[] = {"UK3CB_BAF_V_Osprey_Rifleman_A"};
     headgear[] = {"UK3CB_BAF_H_CrewHelmet_A"};
     backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A"};
+    radios[] = {"ACRE_PRC117F"};
 };
 class vd : smg
 {
@@ -368,6 +366,7 @@ class pp : smg
     uniform[] = {"UK3CB_BAF_U_HeliPilotCoveralls_RN"};
     vest[] = {"UK3CB_BAF_V_Pilot_A"};
     headgear[] = {"UK3CB_BAF_H_PilotHelmetHeli_A"};
+    radios[] = {"ACRE_PRC117F"};
 };
 class pcc : car
 {
@@ -385,6 +384,7 @@ class jp : baseMan
     vest[] = {"FIR_pilot_vest"};
     headgear[] = {"FIR_JHMCS_II"};
     backPack[] = {"B_AssaultPack_blk"};
+    radios[] = {"ACRE_PRC117F"};
 	hmd[] = {};
     sidearmWeapon[] = {"UK3CB_BAF_L131A1"};
     magazines[] =

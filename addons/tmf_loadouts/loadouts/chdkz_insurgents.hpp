@@ -119,7 +119,6 @@ class sl : ftl
 {
     displayName = "Squad Leader";
     sidearmWeapon[] = {"rhs_weap_makarov_pm"};
-    backpack[] = {"TFAR_rt1523g_big_bwmod"};
     magazines[] +=
     {
         LIST_3("rhs_mag_9x18_8_57N181S")
@@ -199,7 +198,6 @@ class mmgac : r
 class mmgag : aar
 {
     displayName = "MMG Assistant Gunner";
-    backpack[] = {"TFAR_rt1523g_big_bwmod"};
     backpackItems[] =
     {
         LIST_2("rhs_100Rnd_762x54mmR")
@@ -214,13 +212,13 @@ class hmgg : car
 };
 class hmgac : r
 {
-    displayName = "HMG Assistant";
-    backPack[] = {"RHS_DShkM_TripodHigh_Bag"};
+    displayName = "HMG Ammo Carrier";
+    backPack[] = {"RHS_DShkM_Gun_Bag"};
 };
 class hmgag : car
 {
-    displayName = "HMG Team Leader";
-    backpack[] = {"TFAR_rt1523g_big_bwmod"};
+    displayName = "HMG Assistant Gunner";
+    backPack[] = {"RHS_DShkM_TripodHigh_Bag"};
     linkedItems[] += {"Binocular"};
 };
 class matg : car
@@ -245,7 +243,7 @@ class matac : r
 class matag : car
 {
     displayName = "MAT Assistant Gunner";
-    backpack[] = {"TFAR_rt1523g_big_bwmod"};
+    backPack[] = {"rhs_rpg_empty"};
     backpackItems[] =
     {
         LIST_2("rhs_rpg7_PG7V_mag")
@@ -274,7 +272,7 @@ class hatac : r
 class hatag : car
 {
     displayName = "HAT Assistant Gunner";
-    backpack[] = {"TFAR_rt1523g_big_bwmod"};
+    backPack[] = {"rhs_rpg_empty"};
     backpackItems[] =
     {
         LIST_2("rhs_rpg7_PG7V_mag")
@@ -288,13 +286,13 @@ class mtrg : car
 };
 class mtrac : r
 {
-    displayName = "Mortar Assistant";
-    backPack[] = {"rhs_M252_Bipod_Bag"};
+    displayName = "Mortar Ammo Carrier";
+    backPack[] = {"rhs_M252_Gun_Bag"};
 };
 class mtrag : car
 {
-    displayName = "Mortar Team Leader";
-    backpack[] = {"TFAR_rt1523g_big_bwmod"};
+    displayName = "Mortar Assistant Gunner";
+    backPack[] = {"rhs_M252_Bipod_Bag"};
 };
 class samg : car
 {
@@ -309,7 +307,7 @@ class samg : car
 class samag : car
 {
     displayName = "AA Assistant Missile Specialist";
-    backpack[] = {"TFAR_rt1523g_big_bwmod"};
+    backpack[] = {"usm_pack_alice"};
     backpackItems[] =
     {
         LIST_1("rhs_fim92_mag")
@@ -334,7 +332,6 @@ class sn : r
 class sp : ftl
 {
     displayName = "Spotter";
-    backpack[] = {"TFAR_rt1523g_big_bwmod"};
 };
 class vc : smg
 {

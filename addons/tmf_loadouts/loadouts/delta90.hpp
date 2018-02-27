@@ -116,7 +116,6 @@ class sl : ftl
 {
     displayName = "Squad Leader";
     sidearmWeapon[] = {"rhsusf_weap_m9"};
-    backpack[] = {"TFAR_rt1523g_black"};
     magazines[] +=
     {
         LIST_3("rhsusf_mag_15Rnd_9x19_FMJ")
@@ -196,7 +195,6 @@ class mmgac : r
 class mmgag : aar
 {
     displayName = "MMG Assistant Gunner";
-    backpack[] = {"TFAR_rt1523g_black"};
     backpackItems[] =
     {
         LIST_3("rhsusf_100Rnd_762x51")
@@ -211,13 +209,13 @@ class hmgg : car
 };
 class hmgac : r
 {
-    displayName = "HMG Assistant";
-    backPack[] = {"RHS_M2_Tripod_Bag"};
+    displayName = "HMG Ammo Carrier";
+    backPack[] = {"RHS_M2_Gun_Bag"};
 };
 class hmgag : car
 {
-    displayName = "HMG Team Leader";
-    backpack[] = {"TFAR_rt1523g_black"};
+    displayName = "HMG Assistant Gunner";
+    backPack[] = {"RHS_M2_Tripod_Bag"};
     linkedItems[] += {"Binocular"};
 };
 class matg : car
@@ -233,7 +231,6 @@ class matac : r
 class matag : car
 {
     displayName = "MAT Assistant Gunner";
-    backpack[] = {"TFAR_rt1523g_black"};
     secondaryWeapon[] = {"rhs_weap_m72a7"};
     linkedItems[] += {"Binocular"};
 };
@@ -250,7 +247,6 @@ class hatac : r
 class hatag : car
 {
     displayName = "HAT Assistant Gunner";
-    backpack[] = {"TFAR_rt1523g_black"};
     secondaryWeapon[] = {"rhs_weap_m72a7"};
     linkedItems[] += {"Binocular"};
 };
@@ -261,13 +257,13 @@ class mtrg : car
 };
 class mtrac : r
 {
-    displayName = "Mortar Assistant";
-    backPack[] = {"rhs_M252_Bipod_Bag"};
+    displayName = "Mortar Ammo Carrier";
+    backPack[] = {"rhs_M252_Gun_Bag"};
 };
 class mtrag : car
 {
-    displayName = "Mortar Team Leader";
-    backpack[] = {"TFAR_rt1523g_black"};
+    displayName = "Mortar Assistant Gunner";
+    backPack[] = {"rhs_M252_Bipod_Bag"};
 };
 class samg : car
 {
@@ -282,7 +278,7 @@ class samg : car
 class samag : car
 {
     displayName = "AA Assistant Missile Specialist";
-    backpack[] = {"TFAR_rt1523g_black"};
+    backpack[] = {"usm_pack_alice"};
     backpackItems[] =
     {
         LIST_1("rhs_fim92_mag")
@@ -308,7 +304,6 @@ class sn : r
 class sp : ftl
 {
     displayName = "Spotter";
-    backpack[] = {"TFAR_rt1523g_black"};
     linkedItems[] += {"Leupold_Mk4"};
 };
 class vc : smg
