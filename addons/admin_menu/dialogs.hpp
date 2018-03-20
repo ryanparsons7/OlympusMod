@@ -286,7 +286,7 @@ class adminMenuDialog {
             y = 0.599 * safezoneH + safezoneY;
             w = 0.0825 * safezoneW;
             h = 0.022 * safezoneH;
-            action = "closeDialog 1889; ['Open',true] spawn BIS_fnc_arsenal;";
+            action = "closeDialog 1889; [player, player, true] call ace_arsenal_fnc_openBox;";
         };
         class adminMenuButton8: adminMenu_RscButton
         {
