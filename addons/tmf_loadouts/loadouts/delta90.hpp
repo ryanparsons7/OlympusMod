@@ -253,17 +253,16 @@ class hatag : car
 class mtrg : car
 {
     displayName = "Mortar Gunner";
-    backPack[] = {"rhs_M252_Gun_Bag"};
+    backPack[] = {"B_Mortar_01_weapon_F"};
 };
 class mtrac : r
 {
     displayName = "Mortar Ammo Carrier";
-    backPack[] = {"rhs_M252_Gun_Bag"};
 };
 class mtrag : car
 {
     displayName = "Mortar Assistant Gunner";
-    backPack[] = {"rhs_M252_Bipod_Bag"};
+    backPack[] = {"B_Mortar_01_support_F"};
 };
 class samg : car
 {
@@ -317,7 +316,6 @@ class vd : vc
 {
     displayName = "Vehicle Driver";
     backpack[] = {"usm_pack_alice"};
-    backpackItems[] = {"ToolKit"};
 };
 class vg : vc
 {

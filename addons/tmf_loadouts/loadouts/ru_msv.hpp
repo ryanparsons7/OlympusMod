@@ -74,8 +74,8 @@ class g : r
     primaryWeapon[] = {"hlc_rifle_ak12GL"};
     magazines[] +=
     {
-        LIST_3("rhs_VOG25"),
-        LIST_2("rhs_GRD40_White")
+        LIST_3("hlc_VOG25_AK"),
+        LIST_2("hlc_GRD_White")
     };
 };
 class car : r
@@ -111,8 +111,8 @@ class ftl : g
     scope[] = {"optic_MRCO"};
     magazines[] +=
     {
-        LIST_2("rhs_GRD40_Green"),
-        LIST_2("rhs_GRD40_Red"),
+        LIST_2("hlc_GRD_Green"),
+        LIST_2("hlc_GRD_Red"),
         LIST_2("rhs_mag_rdg2_white")
     };
     linkedItems[] += {"rhs_pdu4"};
@@ -123,7 +123,7 @@ class sl : ftl
     sidearmWeapon[] = {"rhs_weap_makarov_pm"};
     magazines[] +=
     {
-        LIST_3("rhs_mag_9x18_8_57N181S")
+        LIST_2("rhs_mag_9x18_8_57N181S")
     };
 };
 class co : sl
@@ -281,17 +281,25 @@ class hatag : r
 class mtrg : r
 {
     displayName = "Mortar Gunner";
-    backPack[] = {"RHS_Podnos_Gun_Bag"};
+    backPack[] = {"B_Mortar_01_weapon_F"};
+    items[] += {
+	"ACE_RangeTable_82mm"
+	};
 };
 class mtrac : r
 {
     displayName = "Mortar Ammo Carrier";
-    backPack[] = {"RHS_Podnos_Gun_Bag"};
+    items[] += {
+	"ACE_RangeTable_82mm"
+	};
 };
 class mtrag : r
 {
     displayName = "Mortar Assistant Gunner";
-    backPack[] = {"RHS_Podnos_Bipod_Bag"};
+    backPack[] = {"B_Mortar_01_support_F"};
+    items[] += {
+	"ACE_RangeTable_82mm"
+	};
 };
 class samg : r
 {
@@ -355,7 +363,6 @@ class vd : smg
     vest[] = {"rhs_vydra_3m"};
     headgear[] = {"rhs_tsh4_ess"};
     goggles[] = {"rhs_scarf"};
-    backpackItems[] = {"ToolKit"};
 };
 class vg : smg
 {

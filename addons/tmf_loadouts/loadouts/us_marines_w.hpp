@@ -290,17 +290,25 @@ class hatag : r
 class mtrg : r
 {
     displayName = "Mortar Gunner";
-    backPack[] = {"rhs_M252_Gun_Bag"};
+    backPack[] = {"B_Mortar_01_weapon_F"};
+    items[] += {
+	"ACE_RangeTable_82mm"
+	};
 };
 class mtrac : r
 {
     displayName = "Mortar Ammo Carrier";
-    backPack[] = {"rhs_M252_Gun_Bag"};
+    items[] += {
+	"ACE_RangeTable_82mm"
+	};
 };
 class mtrag : r
 {
     displayName = "Mortar Assistant Gunner";
-    backPack[] = {"rhs_M252_Bipod_Bag"};
+    backPack[] = {"B_Mortar_01_support_F"};
+    items[] += {
+	"ACE_RangeTable_82mm"
+	};
 };
 class samg : r
 {
@@ -363,7 +371,6 @@ class vd : car
     headgear[] = {"rhsusf_cvc_green_helmet"};
     goggles[] = {"rhs_ess_black"};
 	hmd[] = {};
-    backpackItems[] = {"ToolKit"};
 };
 class vg : car
 {

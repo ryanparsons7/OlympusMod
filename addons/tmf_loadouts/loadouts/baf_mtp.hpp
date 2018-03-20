@@ -280,17 +280,25 @@ class hatag : r
 class mtrg : r
 {
     displayName = "Mortar Gunner";
-    backPack[] = {"rhs_M252_Gun_Bag"};
+    backPack[] = {"B_Mortar_01_weapon_F"};
+    items[] += {
+	"ACE_RangeTable_82mm"
+	};
 };
 class mtrac : r
 {
     displayName = "Mortar Ammo Carrier";
-    backPack[] = {"rhs_M252_Gun_Bag"};
+    items[] += {
+	"ACE_RangeTable_82mm"
+	};
 };
 class mtrag : r
 {
     displayName = "Mortar Assistant Gunner";
-    backPack[] = {"rhs_M252_Bipod_Bag"};
+    backPack[] = {"B_Mortar_01_support_F"};
+    items[] += {
+	"ACE_RangeTable_82mm"
+	};
 };
 class samg : r
 {
@@ -351,7 +359,6 @@ class vd : smg
     vest[] = {"UK3CB_BAF_V_Osprey_Rifleman_A"};
     headgear[] = {"UK3CB_BAF_H_CrewHelmet_A"};
     backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A"};
-    backpackItems[] = {"ToolKit"};
 };
 class vg : smg
 {

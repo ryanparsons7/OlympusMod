@@ -4,11 +4,11 @@
 class baseMan {// Weaponless baseclass
     displayName = "Unarmed";
     // All randomized.
-     uniform[] = {"rhs_uniform_cu_ocp"};
+     uniform[] = {"VSM_OGA_Crye_SS_grey_od_pants_Camo"};
        vest[] = {};
        backpack[] = {};
        headgear[] = {};
-       goggles[] = {};
+       goggles[] = {"VSM_Facemask_od_Peltor","VSM_Facemask_od_glasses","VSM_Balaclava2_od_Goggles","rhsusf_shemagh2_gogg_od","rhsusf_shemagh_od","rhsusf_oakley_goggles_blk"};
        hmd[] = {"rhsusf_ANPVS_14"};
     // Leave empty to remove all. "Default" > leave original item.
 
@@ -55,11 +55,9 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    headgear[] = {"rhsusf_ach_helmet_headset_ocp"};
-    vest[] = {"rhsusf_iotv_ocp_Rifleman"};
-    backpack[] = {"rhsusf_assault_eagleaiii_ocp"};
+    headgear[] = {"VSM_OGA_OD_OPS_2"};
+    vest[] = {"VSM_RAV_operator_OGA_OD","VSM_RAV_Breacher_OGA_OD"};
     primaryWeapon[] = {"rhs_weap_m4a1_carryhandle"};
-    scope[] = {"rhsusf_acc_eotech_552"};
     attachment[] = {"rhsusf_acc_wmx_bk"};
     magazines[] =
     {
@@ -72,7 +70,6 @@ class r : baseMan
 class g : r
 {
     displayName = "Grenadier";
-    vest[] = {"rhsusf_iotv_ocp_Grenadier"};
     primaryWeapon[] = {"rhs_weap_m4a1_carryhandle_m203"};
     magazines[] +=
     {
@@ -95,7 +92,7 @@ class car : r
 class m : r
 {
     displayName = "Medic";
-    vest[] = {"rhsusf_iotv_ocp_Medic"};
+    backpack[] = {"VSM_OGA_OD_Backpack_Kitbag"};
     backpackItems[] += {
         #include "medicalbackpack.hpp"
     };
@@ -115,8 +112,7 @@ class smg : r
 class ftl : g
 {
     displayName = "Fireteam Leader";
-    vest[] = {"rhsusf_iotv_ocp_Teamleader"};
-    scope[] = {"rhsusf_acc_ACOG3"};
+    backpack[] = {"VSM_OGA_OD_Backpack_Kitbag"};
     magazines[] +=
     {
         LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
@@ -129,7 +125,6 @@ class ftl : g
 class sl : ftl
 {
     displayName = "Squad Leader";
-    vest[] = {"rhsusf_iotv_ocp_Squadleader"};
     sidearmWeapon[] = {"rhsusf_weap_m9"};
     magazines[] +=
     {
@@ -148,8 +143,9 @@ class jtac : co
 class ar : r
 {
     displayName = "Automatic Rifleman";
+    backpack[] = {"VSM_OGA_OD_Backpack_Kitbag"};
+    vest[] = {"VSM_RAV_MG_OGA_OD"};
     primaryWeapon[] = {"rhs_weap_m249_pip_S_vfg"};
-    scope[] = {"rhsusf_acc_ELCAN"};
     sidearmWeapon[] = {"rhsusf_weap_m9"};
     magazines[] =
     {
@@ -162,6 +158,7 @@ class ar : r
 class aar : r
 {
     displayName = "Assistant Automatic Rifleman";
+    backpack[] = {"VSM_OGA_OD_Backpack_Kitbag"};
     backpackItems[] =
     {
 		LIST_4("rhsusf_100Rnd_556x45_soft_pouch")
@@ -191,7 +188,7 @@ class mmgg : ar
     displayName = "MMG Gunner";
     primaryWeapon[] = {"rhs_weap_m240B"};
     scope[] = {"rhsusf_acc_ACOG_MDO"};
-    vest[] = {"rhsusf_iotv_ocp_SAW"};
+    vest[] = {"VSM_RAV_MG_OGA_OD"};
     magazines[] =
     {
         LIST_4("rhsusf_100Rnd_762x51"),
@@ -204,6 +201,7 @@ class mmgg : ar
 class mmgac : r
 {
     displayName = "MMG Ammo Carrier";
+    backpack[] = {"VSM_OGA_OD_Backpack_Kitbag"};
     backpackItems[] =
     {
         LIST_3("rhsusf_100Rnd_762x51")
@@ -253,7 +251,7 @@ class matag : r
 class hatg : r
 {
     displayName = "HAT Gunner";
-    backPack[] = {"VSM_Multicam_carryall"};
+    backPack[] = {"VSM_OGA_OD_carryall"};
     secondaryWeapon[] = {"rhs_weap_fgm148"};
     backpackItems[] = {
         "rhs_fgm148_magazine_AT"
@@ -262,7 +260,7 @@ class hatg : r
 class hatac : r
 {
     displayName = "HAT Ammo Carrier";
-    backPack[] = {"VSM_Multicam_carryall"};
+    backPack[] = {"VSM_OGA_OD_carryall"};
     backpackItems[] = {
         "rhs_fgm148_magazine_AT"
     };
@@ -298,6 +296,7 @@ class mtrag : r
 class samg : r
 {
     displayName = "AA Missile Specialist";
+    backpack[] = {"VSM_OGA_OD_Backpack_Kitbag"};
     secondaryWeapon[] = {"rhs_weap_fim92"};
     magazines[] +=
     {
@@ -307,6 +306,7 @@ class samg : r
 class samag : r
 {
     displayName = "AA Assistant Missile Specialist";
+    backpack[] = {"VSM_OGA_OD_Backpack_Kitbag"};
     backpackItems[] =
     {
         LIST_1("rhs_fim92_mag")
@@ -315,11 +315,13 @@ class samag : r
 class sn : r
 {
     displayName = "Sniper";
-    uniform[] = {"U_B_GhillieSuit"};
+    headgear[] = {"VSM_FullShemagh_OD"};
     primaryWeapon[] = {"rhs_weap_XM2010"};
     scope[] = {"rhsusf_acc_LEUPOLDMK4_2"};
     bipod[] = {"rhsusf_acc_harris_bipod"};
     sidearmWeapon[] = {"rhsusf_weap_m9"};
+    hmd[] = {};
+    goggles[] = {};
     magazines[] =
     {
         LIST_9("rhsusf_5Rnd_300winmag_xm2010"),
@@ -334,8 +336,11 @@ class sn : r
 class sp : ftl
 {
     displayName = "Spotter";
-    uniform[] = {"U_B_GhillieSuit"};
+    backpack[] = {"VSM_OGA_OD_Backpack_Kitbag"};
+    headgear[] = {"VSM_FullShemagh_OD"};
     radios[] = {"ACRE_PRC117F"};
+    hmd[] = {};
+    goggles[] = {};
     linkedItems[] += {"Leupold_Mk4"};
     items[] += {
 	#include "sniperitems.hpp"
@@ -345,7 +350,7 @@ class vc : car
 {
     displayName = "Vehicle Commander";
     headgear[] = {"rhsusf_cvc_green_alt_helmet"};
-    goggles[] = {"rhsusf_shemagh2_gogg_tan"};
+    backpack[] = {"VSM_OGA_OD_Backpack_Kitbag"};
     radios[] = {"ACRE_PRC117F"};
 	hmd[] = {};
 };
@@ -353,27 +358,27 @@ class vd : car
 {
     displayName = "Vehicle Driver";
     headgear[] = {"rhsusf_cvc_green_alt_helmet"};
-    goggles[] = {"rhsusf_shemagh2_gogg_tan"};
+    backpack[] = {"VSM_OGA_OD_Backpack_Kitbag"};
 	hmd[] = {};
 };
 class vg : car
 {
     displayName = "Vehicle Gunner";
+    backpack[] = {"VSM_OGA_OD_Backpack_Kitbag"};
     headgear[] = {"rhsusf_cvc_green_alt_helmet"};
-    goggles[] = {"rhsusf_shemagh2_gogg_tan"};
 	hmd[] = {};
 };
 class pp : car
 {
     displayName = "Helicopter Pilot";
-    vest[] = {"rhsusf_spcs_ocp"};
-    headgear[] = {"rhsusf_hgu56p"};
+    backpack[] = {"VSM_OGA_OD_Backpack_Kitbag"};
+    headgear[] = {"rhsusf_hgu56p_visor_black"};
     radios[] = {"ACRE_PRC117F"};
 };
 class pcc : pp
 {
     displayName = "Helicopter Crew Chief";
-    headgear[] = {"rhsusf_hgu56p_visor_mask"};
+    headgear[] = {"rhsusf_hgu56p_visor_mask_Empire_black","rhsusf_hgu56p_visor_mask_black_skull"};
 };
 class pc : pcc
 {

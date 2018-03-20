@@ -1,5 +1,41 @@
 class CfgLoadouts
 {
+	class sweden_modern_d
+    {
+        displayName = "Army Desert";
+		category = "Sweden";
+        #include "loadouts\sweden_modern_d.hpp"
+    };
+	class sweden_modern_w
+    {
+        displayName = "Army Woodland";
+		category = "Sweden";
+        #include "loadouts\sweden_modern_w.hpp"
+    };
+	class french_army_w
+    {
+        displayName = "French Army Woodland";
+		category = "French";
+        #include "loadouts\french_army_w.hpp"
+    };
+	class french_army_d
+    {
+        displayName = "French Army Desert";
+		category = "French";
+        #include "loadouts\french_army_d.hpp"
+    };
+	class ger_army
+    {
+        displayName = "German Army Flecktarn";
+		category = "Germany";
+        #include "loadouts\ger_army.hpp"
+    };
+	class ger_army_der
+    {
+        displayName = "German Army Tropentarn";
+		category = "Germany";
+        #include "loadouts\ger_army_d.hpp"
+    };
 	class rangers_90
     {
         displayName = "Rangers 90s";
@@ -42,6 +78,12 @@ class CfgLoadouts
 		category = "American";
         #include "loadouts\us_army_ocp.hpp"
     };
+    class us_army_ocp_2020
+    {
+        displayName = "US Army OCP 2020s";
+		category = "American";
+        #include "loadouts\us_army_ocp_2020.hpp"
+    };
     class us_marines_d_2020
     {
         displayName = "US Marines Desert 2020s";
@@ -60,6 +102,12 @@ class CfgLoadouts
 		category = "American";
         #include "loadouts\us_marines_d.hpp"
     };
+    class marsoc
+    {
+        displayName = "MARSOC";
+		category = "American";
+        #include "loadouts\marsoc.hpp"
+    };
     class us_marines_w
     {
         displayName = "US Marines Woodland";
@@ -71,5 +119,17 @@ class CfgLoadouts
         displayName = "ChDKZ Insurgents";
 		category = "Russian";
         #include "loadouts\chdkz_insurgents.hpp"
+    };
+    class private_military_company_des
+    {
+        displayName = "PMC Desert";
+		category = "Independents";
+        #include "loadouts\private_military_company_des.hpp"
+    };
+    class private_military_company_wdl
+    {
+        displayName = "PMC Woodland";
+		category = "Independents";
+        #include "loadouts\private_military_company_wdl.hpp"
     };
 };
