@@ -287,15 +287,15 @@ class mtrg : r
 };
 class mtrac : r
 {
-    displayName = "Mortar Ammo Carrier";
+    displayName = "Mortar Assistant";
+    backPack[] = {"B_Mortar_01_support_F"};
     items[] += {
 	"ACE_RangeTable_82mm"
 	};
 };
 class mtrag : r
 {
-    displayName = "Mortar Assistant Gunner";
-    backPack[] = {"B_Mortar_01_support_F"};
+    displayName = "Mortar Spotter";
     items[] += {
 	"ACE_RangeTable_82mm"
 	};

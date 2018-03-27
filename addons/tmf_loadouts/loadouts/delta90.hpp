@@ -249,19 +249,28 @@ class hatag : car
     secondaryWeapon[] = {"rhs_weap_m72a7"};
     linkedItems[] += {"Binocular"};
 };
-class mtrg : car
+class mtrg : r
 {
     displayName = "Mortar Gunner";
     backPack[] = {"B_Mortar_01_weapon_F"};
+    items[] += {
+	"ACE_RangeTable_82mm"
+	};
 };
 class mtrac : r
 {
-    displayName = "Mortar Ammo Carrier";
-};
-class mtrag : car
-{
-    displayName = "Mortar Assistant Gunner";
+    displayName = "Mortar Assistant";
     backPack[] = {"B_Mortar_01_support_F"};
+    items[] += {
+	"ACE_RangeTable_82mm"
+	};
+};
+class mtrag : r
+{
+    displayName = "Mortar Spotter";
+    items[] += {
+	"ACE_RangeTable_82mm"
+	};
 };
 class samg : car
 {
