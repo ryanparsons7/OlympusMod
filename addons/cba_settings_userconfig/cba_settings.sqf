@@ -49,7 +49,7 @@ force asr_ai3_skills_setskills = true;
 force asr_ai3_skills_teamsuperai = true;
 
 force ace_medical_blood_enabledFor = 2;
-force ace_common_checkPBOsAction = 0;
+force ace_common_checkPBOsAction = 1;
 force ace_common_checkPBOsCheckAll = true;
 force ace_common_checkPBOsWhitelist = "[""aar_main""]";
 force ace_common_settingFeedbackIcons = 1;
@@ -305,7 +305,7 @@ force ace_zeus_radioOrdnance = false;
 force ace_zeus_revealMines = 0;
 force ace_zeus_autoAddObjects = false;
 force acex_headless_enabled = true;
-force acex_headless_delay = 120;
+force acex_headless_delay = 30;
 force acex_headless_endMission = 0;
 force acex_headless_log = false;
 force ace_advanced_ballistics_enabled = false;
