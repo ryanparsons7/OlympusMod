@@ -64,7 +64,7 @@ class r : baseMan
     {
         LIST_5("hlc_30Rnd_545x39_B_AK"),
         LIST_2("rhs_mag_rgn"),
-        LIST_2("rhs_mag_rdg2_white")
+        LIST_1("rhs_mag_rdg2_white")
     };
 };
 class g : r
@@ -363,6 +363,9 @@ class vd : smg
     vest[] = {"rhs_vydra_3m"};
     headgear[] = {"rhs_tsh4_ess"};
     goggles[] = {"rhs_scarf"};
+    items[] += {
+	"ToolKit"
+	};
 };
 class vg : smg
 {

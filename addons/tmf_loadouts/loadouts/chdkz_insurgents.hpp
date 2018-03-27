@@ -342,6 +342,9 @@ class vd : vc
 {
     displayName = "Vehicle Driver";
     backpack[] = {"usm_pack_alice"};
+    items[] += {
+	"ToolKit"
+	};
 };
 class vg : vc
 {

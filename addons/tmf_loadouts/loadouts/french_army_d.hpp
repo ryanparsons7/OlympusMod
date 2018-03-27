@@ -343,6 +343,9 @@ class vd : smg
     displayName = "Vehicle Driver";
     headgear[] = {"R3F_casque_equipage"};
 	hmd[] = {};
+    items[] += {
+	"ToolKit"
+	};
 };
 class vg : smg
 {

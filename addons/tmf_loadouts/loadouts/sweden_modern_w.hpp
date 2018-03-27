@@ -340,6 +340,9 @@ class vd : car
     displayName = "Vehicle Driver";
     headgear[] = {"H_HelmetCrew_I"};
 	hmd[] = {};
+    items[] += {
+	"ToolKit"
+	};
 };
 class vg : car
 {

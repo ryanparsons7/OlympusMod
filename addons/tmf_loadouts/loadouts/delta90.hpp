@@ -60,7 +60,6 @@ class r : baseMan
     backpack[] = {"B_AssaultPack_blk"};
     primaryWeapon[] = {"hlc_rifle_Colt727"};
     scope[] = {"rhsusf_acc_compm4"};
-    attachment[] = {"hlc_muzzle_snds_AUG"};
     magazines[] =
     {
         LIST_6("30Rnd_556x45_Stanag"),
@@ -177,7 +176,7 @@ class mmgg : ar
     scope[] = {};
     magazines[] =
     {
-        LIST_6("hlc_100Rnd_762x51_M_M60E4"),
+        LIST_4("hlc_100Rnd_762x51_M_M60E4"),
         "HandGrenade",
         "SmokeShell",
         LIST_4("rhsusf_mag_15Rnd_9x19_FMJ")
@@ -316,6 +315,9 @@ class vd : vc
 {
     displayName = "Vehicle Driver";
     backpack[] = {"usm_pack_alice"};
+    items[] += {
+	"ToolKit"
+	};
 };
 class vg : vc
 {

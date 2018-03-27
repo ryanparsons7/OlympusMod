@@ -332,6 +332,9 @@ class vd : smg
 	hmd[] = {};
     headgear[] = {"usm_helmet_cvc"};
     backpack[] = {"usm_pack_alice"};
+    items[] += {
+	"ToolKit"
+	};
 };
 class vg : smg
 {

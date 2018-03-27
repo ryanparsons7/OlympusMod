@@ -316,6 +316,9 @@ class vd : smg
     backpack[] = {"rhs_assault_umbts_engineer"};
 	hmd[] = {};
     headgear[] = {"rhs_tsh4"};
+    items[] += {
+	"ToolKit"
+	};
 };
 class vg : smg
 {

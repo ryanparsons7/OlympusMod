@@ -360,6 +360,9 @@ class vd : car
     headgear[] = {"rhsusf_cvc_green_alt_helmet"};
     backpack[] = {"VSM_OGA_OD_Backpack_Kitbag"};
 	hmd[] = {};
+    items[] += {
+	"ToolKit"
+	};
 };
 class vg : car
 {

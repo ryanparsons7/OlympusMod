@@ -355,6 +355,9 @@ class vd : car
     headgear[] = {"rhsusf_cvc_green_alt_helmet"};
     goggles[] = {"rhsusf_shemagh2_gogg_tan"};
 	hmd[] = {};
+    items[] += {
+	"ToolKit"
+	};
 };
 class vg : car
 {

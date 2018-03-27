@@ -359,6 +359,9 @@ class vd : smg
     vest[] = {"UK3CB_BAF_V_Osprey_Rifleman_A"};
     headgear[] = {"UK3CB_BAF_H_CrewHelmet_A"};
     backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A"};
+    items[] += {
+	"ToolKit"
+	};
 };
 class vg : smg
 {

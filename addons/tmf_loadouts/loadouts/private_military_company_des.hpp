@@ -362,6 +362,9 @@ class vd : car
     backpack[] = {"VSM_OGA_Backpack_Kitbag"};
     goggles[] = {"rhsusf_shemagh2_gogg_tan"};
 	hmd[] = {};
+    items[] += {
+	"ToolKit"
+	};
 };
 class vg : car
 {

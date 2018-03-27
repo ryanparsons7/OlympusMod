@@ -362,6 +362,9 @@ class vd : smg
     headgear[] = {"BWA3_CrewmanKSK_Tropen_Headset"};
     goggles[] = {"BWA3_G_Combat_Clear"};
 	hmd[] = {};
+    items[] += {
+	"ToolKit"
+	};
 };
 class vg : smg
 {
