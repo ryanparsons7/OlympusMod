@@ -1,3 +1,16 @@
+// ADV - ACE CPR
+force adv_aceCPR_addTime = 20;
+force adv_aceCPR_chance_0 = 5;
+force adv_aceCPR_chance_1 = 15;
+force adv_aceCPR_chance_2 = 40;
+force adv_aceCPR_chance_aed = 85;
+force adv_aceCPR_maxTime = 1200;
+
+// ADV - ACE Splint
+force adv_aceSplint_reopenChance = 0;
+force adv_aceSplint_reopenTime = 600;
+force adv_aceSplint_reuseChance = 80;
+
 force niarms_magSwitch = true;
 
 force STHud_Settings_Font = "PuristaSemibold";
@@ -37,6 +50,9 @@ force asr_ai3_danger_rrdelayplus = 10;
 force asr_ai3_danger_seekcover = true;
 force asr_ai3_danger_usebuildings = 0.8;
 force asr_ai3_hitreactions_fallDown = true;
+force asr_ai3_incognito_incodbg = false;
+force asr_ai3_incognito_incodiff = 0;
+force asr_ai3_incognito_incohint = false;
 force asr_ai3_main_factionskip_str = "['CIV_F','CIV_IDAP_F','LOP_AFR_Civ','LOP_CHR_Civ','LOP_TAK_Civ']";
 force asr_ai3_rearming_debug_rearm = false;
 force asr_ai3_rearming_rearm = 40;
@@ -47,6 +63,9 @@ force asr_ai3_skills_debug_setskill = false;
 force asr_ai3_skills_packNVG = true;
 force asr_ai3_skills_setskills = true;
 force asr_ai3_skills_teamsuperai = true;
+
+// Bundeswehr
+force BWA3_NaviPad_showMembers = true;
 
 force ace_medical_blood_enabledFor = 2;
 force ace_common_checkPBOsAction = 1;
@@ -169,7 +188,7 @@ force ace_nightvision_aimDownSightsBlur = 0.327541;
 force ace_optionsmenu_showNewsOnMainMenu = true;
 force ace_overheating_displayTextOnJam = true;
 force ace_overheating_showParticleEffects = true;
-force ace_overheating_showParticleEffectsForEveryone = false;
+force ace_overheating_showParticleEffectsForEveryone = true;
 force ace_overheating_overheatingDispersion = true;
 force ace_overheating_unJamOnreload = true;
 force ace_overheating_unJamFailChance = 0.1;
