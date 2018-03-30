@@ -95,7 +95,7 @@ class m : car
 {
     displayName = "Medic";
     backPack[] = {"usm_pack_m5_medic"};
-    backpackItems[] = {
+    items[] += {
         #include "medicalbackpack.hpp"
     };
 };

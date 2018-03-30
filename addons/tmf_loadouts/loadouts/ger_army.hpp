@@ -97,7 +97,7 @@ class m : r
     displayName = "Medic";
     backPack[] = {"BWA3_Kitbag_Fleck_Medic"};
     vest[] = {"BWA3_Vest_Medic_Fleck"};
-    backpackItems[] += {
+    items[] += {
         #include "medicalbackpack.hpp"
     };
 };

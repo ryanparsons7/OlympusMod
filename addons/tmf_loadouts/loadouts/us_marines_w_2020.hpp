@@ -96,7 +96,7 @@ class m : r
 {
     displayName = "Medic";
     vest[] = {"rhsusf_spc_corpsman"};
-    backpackItems[] += {
+    items[] += {
         #include "medicalbackpack.hpp"
     };
 };

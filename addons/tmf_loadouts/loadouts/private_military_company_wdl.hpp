@@ -93,7 +93,7 @@ class m : r
 {
     displayName = "Medic";
     backpack[] = {"VSM_OGA_OD_Backpack_Kitbag"};
-    backpackItems[] += {
+    items[] += {
         #include "medicalbackpack.hpp"
     };
 };

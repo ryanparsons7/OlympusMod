@@ -88,7 +88,7 @@ class m : r
     displayName = "Medic";
     vest[] = {"rhs_6b23_digi_medic"};
     backPack[] = {"rhs_assault_umbts_medic"};
-    backpackItems[] = {
+    items[] += {
         #include "medicalbackpack.hpp"
     };
 };
@@ -254,24 +254,12 @@ class matag : r
 class hatg : r
 {
     displayName = "HAT Gunner";
-    secondaryWeapon[] = {"rhs_weap_rpg7"};
-    secondaryAttachments[] = {"rhs_acc_pgo7v3"};
-    backPack[] = {"rhs_rpg_empty"};
-    backpackItems[] = {
-        LIST_2("rhs_rpg7_PG7V_mag"),
-		"rhs_rpg7_PG7VL_mag",
-		"rhs_rpg7_OG7V_mag"
-    };
+    backPack[] = {"RHS_Metis_Gun_Bag"};
 };
 class hatac : r
 {
     displayName = "HAT Ammo Carrier";
-    backPack[] = {"rhs_rpg_empty"};
-    backpackItems[] = {
-        LIST_2("rhs_rpg7_PG7V_mag"),
-		"rhs_rpg7_PG7VL_mag",
-		"rhs_rpg7_OG7V_mag"
-    };
+    backPack[] = {"RHS_Metis_Tripod_Bag"};
 };
 class hatag : r
 {

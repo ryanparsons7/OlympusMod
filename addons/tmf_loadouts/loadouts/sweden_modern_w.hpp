@@ -86,7 +86,7 @@ class car : r
 class m : r
 {
     displayName = "Medic";
-    backpackItems[] += {
+    items[] += {
         #include "medicalbackpack.hpp"
     };
 };

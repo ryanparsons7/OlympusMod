@@ -92,7 +92,7 @@ class m : car
 {
     displayName = "Medic";
     backPack[] = {"LOP_CDF_Kitbag_Med"};
-    backpackItems[] = {
+    items[] += {
         #include "medicalbackpack.hpp"
     };
 };

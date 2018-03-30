@@ -90,7 +90,7 @@ class m : car
 {
     displayName = "Medic";
     backPack[] = {"rhssaf_kitbag_md2camo"};
-    backpackItems[] = {
+    items[] += {
         #include "medicalbackpack.hpp"
     };
 };
@@ -253,30 +253,16 @@ class matag : car
 class hatg : car
 {
     displayName = "HAT Gunner";
-    secondaryWeapon[] = {"rhs_weap_rpg7"};
-    backPack[] = {"rhs_rpg_empty"};
-    backpackItems[] =
-    {
-        LIST_2("rhs_rpg7_PG7V_mag")
-    };
+    backPack[] = {"RHS_Metis_Gun_Bag"};
 };
-class hatac : r
+class hatac : car
 {
     displayName = "HAT Ammo Carrier";
-    backPack[] = {"rhs_rpg_empty"};
-    backpackItems[] =
-    {
-        LIST_2("rhs_rpg7_PG7V_mag")
-    };
+    backPack[] = {"RHS_Metis_Tripod_Bag"};
 };
 class hatag : car
 {
     displayName = "HAT Assistant Gunner";
-    backPack[] = {"rhs_rpg_empty"};
-    backpackItems[] =
-    {
-        LIST_2("rhs_rpg7_PG7V_mag")
-    };
     linkedItems[] += {"Binocular"};
 };
 class mtrg : r
