@@ -36,11 +36,17 @@ class CfgLoadouts
 		category = "Germany";
         #include "loadouts\ger_army_d.hpp"
     };
-	class rangers_90
+	class rangers1990des
     {
-        displayName = "Rangers 90s";
+        displayName = "Rangers 1990 Desert";
 		category = "American";
-        #include "loadouts\rangers90.hpp"
+        #include "loadouts\rangers1990des.hpp"
+    };
+	class rangers1990wdl
+    {
+        displayName = "Rangers 1990 Woodland";
+		category = "American";
+        #include "loadouts\rangers1990wdl.hpp"
     };
     class delta_90
     {
@@ -131,5 +137,17 @@ class CfgLoadouts
         displayName = "PMC Woodland";
 		category = "Independents";
         #include "loadouts\private_military_company_wdl.hpp"
+    };
+    class police
+    {
+        displayName = "Police";
+		category = "Independents";
+        #include "loadouts\police.hpp"
+    };
+    class criminals
+    {
+        displayName = "Criminals";
+		category = "Independents";
+        #include "loadouts\criminals.hpp"
     };
 };
