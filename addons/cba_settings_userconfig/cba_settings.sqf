@@ -6,6 +6,12 @@ force adv_aceCPR_chance_2 = 40;
 force adv_aceCPR_chance_aed = 85;
 force adv_aceCPR_maxTime = 1200;
 
+// Dynamic View Distance
+force DVD_applyBaseViewDistance = false;
+force DVD_baseViewDistance = 5;
+force DVD_enabled = true;
+force DVD_maxAltSetting = 5;
+
 // ADV - ACE Splint
 force adv_aceSplint_reopenChance = 0;
 force adv_aceSplint_reopenTime = 600;
@@ -282,8 +288,15 @@ force ace_ui_vehicleInfoBackground = true;
 force ace_vehiclelock_defaultLockpickStrength = 10;
 force ace_vehiclelock_lockVehicleInventory = true;
 force ace_vehiclelock_vehicleStartingLockState = -1;
-force ace_viewdistance_enabled = true;
+
+// ACE View Distance Limiter
+force ace_viewdistance_enabled = false;
 force ace_viewdistance_limitViewDistance = 12000;
+force ace_viewdistance_objectViewDistanceCoeff = 0;
+force ace_viewdistance_viewDistanceAirVehicle = 0;
+force ace_viewdistance_viewDistanceLandVehicle = 0;
+force ace_viewdistance_viewDistanceOnFoot = 0;
+
 force ace_weaponselect_displayText = true;
 force ace_weather_enabled = true;
 force ace_weather_updateInterval = 60;
