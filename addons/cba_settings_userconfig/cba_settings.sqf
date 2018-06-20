@@ -4,7 +4,9 @@ force adv_aceCPR_chance_0 = 5;
 force adv_aceCPR_chance_1 = 15;
 force adv_aceCPR_chance_2 = 40;
 force adv_aceCPR_chance_aed = 85;
+force adv_aceCPR_enable = true;
 force adv_aceCPR_maxTime = 1200;
+force adv_aceCPR_useLocation_AED = 0;
 
 // Dynamic View Distance
 force DVD_applyBaseViewDistance = false;
@@ -13,6 +15,7 @@ force DVD_enabled = true;
 force DVD_maxAltSetting = 5;
 
 // ADV - ACE Splint
+force adv_aceSplint_enable = true;
 force adv_aceSplint_reopenChance = 0;
 force adv_aceSplint_reopenTime = 600;
 force adv_aceSplint_reuseChance = 80;
