@@ -119,6 +119,7 @@ class ftl : g
         LIST_2("1Rnd_SmokeRed_Grenade_shell"),
         LIST_2("SmokeShellGreen")
     };
+    linkedItems[] += {"Binocular"};
 };
 class sl : ftl
 {
