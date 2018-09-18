@@ -4,7 +4,7 @@
 class baseMan {// Weaponless baseclass
     displayName = "Unarmed";
     // All randomized.
-       uniform[] = {"rhsgref_uniform_dpm"};
+       uniform[] = {"UK3CB_BAF_U_Smock_DPMW"};
        vest[] = {};
        backpack[] = {"UK3CB_BAF_B_Bergen_DPMW_Rifleman_A"};
        headgear[] = {};
@@ -55,14 +55,14 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    headgear[] = {"rhs_beanie_green"};
+    headgear[] = {"UK3CB_BAF_H_Mk6_DPMW_A"};
     vest[] = {"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW"};
-    primaryWeapon[] = {"hlc_rifle_c1A1"};
+    primaryWeapon[] = {"UK3CB_BAF_L1A1"};
     scope[] = {};
     attachment[] = {};
     magazines[] =
     {
-        LIST_8("hlc_20Rnd_762x51_B_fal"),
+        LIST_8("UK3CB_BAF_762_20Rnd"),
         LIST_2("HandGrenade"),
         "SmokeShell"
     };
