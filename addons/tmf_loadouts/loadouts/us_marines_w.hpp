@@ -155,8 +155,7 @@ class ar : r
     bipod[] = {"rhsusf_acc_harris_bipod"};
     magazines[] =
     {
-        LIST_8("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
-        LIST_2("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
+        LIST_5("rhs_mag_100Rnd_556x45_M855A1_cmag_mixed"),
         "HandGrenade",
         "SmokeShell",
         LIST_4("hlc_13Rnd_9x19_B_P228")
@@ -167,8 +166,7 @@ class aar : r
     displayName = "Assistant Automatic Rifleman";
     backpackItems[] =
     {
-        LIST_6("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
-        "UK3CB_BAF_556_200Rnd_T"
+        LIST_3("rhs_mag_100Rnd_556x45_M855A1_cmag_mixed")
     };
     linkedItems[] += {"Binocular"};
 };
@@ -243,7 +241,7 @@ class hmgag : r
 class matg : r
 {
     displayName = "MAT Gunner";
-    backPack[] = {"VSM_OGA_carryall"};
+    backPack[] = {"B_Carryall_oli"};
     secondaryWeapon[] = {"rhs_weap_smaw_green"};
     secondaryAttachments[] = {"rhs_weap_optic_smaw"};
     backpackItems[] = {
@@ -254,7 +252,7 @@ class matg : r
 class matac : r
 {
     displayName = "MAT Ammo Carrier";
-    backPack[] = {"VSM_OGA_carryall"};
+    backPack[] = {"B_Carryall_oli"};
     backpackItems[] = {
         LIST_2("rhs_mag_smaw_HEAA"),
         LIST_3("rhs_mag_smaw_SR")
@@ -268,7 +266,7 @@ class matag : r
 class hatg : r
 {
     displayName = "HAT Gunner";
-    backPack[] = {"VSM_OGA_carryall"};
+    backPack[] = {"B_Carryall_oli"};
     secondaryWeapon[] = {"rhs_weap_fgm148"};
     backpackItems[] = {
         "rhs_fgm148_magazine_AT"
@@ -277,7 +275,7 @@ class hatg : r
 class hatac : r
 {
     displayName = "HAT Ammo Carrier";
-    backPack[] = {"VSM_OGA_carryall"};
+    backPack[] = {"B_Carryall_oli"};
     backpackItems[] = {
         "rhs_fgm148_magazine_AT"
     };

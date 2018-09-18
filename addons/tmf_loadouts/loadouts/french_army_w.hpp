@@ -244,7 +244,7 @@ class matag : r
 class hatg : r
 {
     displayName = "HAT Gunner";
-    backPack[] = {"VSM_Multicam_carryall"};
+    backPack[] = {"B_Carryall_mcamo"};
     secondaryWeapon[] = {"rhs_weap_fgm148"};
     backpackItems[] = {
         "rhs_fgm148_magazine_AT"
@@ -253,7 +253,7 @@ class hatg : r
 class hatac : r
 {
     displayName = "HAT Ammo Carrier";
-    backPack[] = {"VSM_Multicam_carryall"};
+    backPack[] = {"B_Carryall_mcamo"};
     backpackItems[] = {
         "rhs_fgm148_magazine_AT"
     };

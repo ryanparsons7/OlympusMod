@@ -150,7 +150,7 @@ class ar : r
     sidearmWeapon[] = {"hlc_Pistol_M11A1"};
     magazines[] =
     {
-        LIST_6("rhsusf_100Rnd_556x45_soft_pouch"),
+        LIST_6("rhsusf_200rnd_556x45_mixed_box"),
         "HandGrenade",
         "SmokeShell",
         LIST_4("hlc_13Rnd_9x19_B_P228")
@@ -237,7 +237,7 @@ class hmgag : r
 class matg : r
 {
     displayName = "MAT Gunner";
-    backPack[] = {"VSM_OGA_carryall"};
+    backPack[] = {"B_Carryall_oli"};
     secondaryWeapon[] = {"rhs_weap_smaw_green"};
     secondaryAttachments[] = {"rhs_weap_optic_smaw"};
     backpackItems[] = {
@@ -248,7 +248,7 @@ class matg : r
 class matac : r
 {
     displayName = "MAT Ammo Carrier";
-    backPack[] = {"VSM_OGA_carryall"};
+    backPack[] = {"B_Carryall_oli"};
     backpackItems[] = {
         LIST_2("rhs_mag_smaw_HEAA"),
         LIST_3("rhs_mag_smaw_SR")
@@ -262,7 +262,7 @@ class matag : r
 class hatg : r
 {
     displayName = "HAT Gunner";
-    backPack[] = {"VSM_OGA_carryall"};
+    backPack[] = {"B_Carryall_oli"};
     secondaryWeapon[] = {"rhs_weap_fgm148"};
     backpackItems[] = {
         "rhs_fgm148_magazine_AT"
@@ -271,7 +271,7 @@ class hatg : r
 class hatac : r
 {
     displayName = "HAT Ammo Carrier";
-    backPack[] = {"VSM_OGA_carryall"};
+    backPack[] = {"B_Carryall_oli"};
     backpackItems[] = {
         "rhs_fgm148_magazine_AT"
     };

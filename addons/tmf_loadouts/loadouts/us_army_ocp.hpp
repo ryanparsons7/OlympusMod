@@ -153,7 +153,7 @@ class ar : r
     sidearmWeapon[] = {"rhsusf_weap_m9"};
     magazines[] =
     {
-		LIST_6("rhsusf_100Rnd_556x45_soft_pouch"),
+		LIST_6("rhsusf_200rnd_556x45_mixed_box"),
         "HandGrenade",
         "SmokeShell",
         LIST_4("rhsusf_mag_15Rnd_9x19_JHP")
@@ -164,7 +164,7 @@ class aar : r
     displayName = "Assistant Automatic Rifleman";
     backpackItems[] =
     {
-		LIST_4("rhsusf_100Rnd_556x45_soft_pouch")
+		LIST_4("rhsusf_200rnd_556x45_mixed_box")
     };
     linkedItems[] += {"Binocular"};
 };
@@ -253,7 +253,7 @@ class matag : r
 class hatg : r
 {
     displayName = "HAT Gunner";
-    backPack[] = {"VSM_Multicam_carryall"};
+    backPack[] = {"B_Carryall_mcamo"};
     secondaryWeapon[] = {"rhs_weap_fgm148"};
     backpackItems[] = {
         "rhs_fgm148_magazine_AT"
@@ -262,7 +262,7 @@ class hatg : r
 class hatac : r
 {
     displayName = "HAT Ammo Carrier";
-    backPack[] = {"VSM_Multicam_carryall"};
+    backPack[] = {"B_Carryall_mcamo"};
     backpackItems[] = {
         "rhs_fgm148_magazine_AT"
     };

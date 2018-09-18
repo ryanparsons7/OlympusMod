@@ -1,17 +1,5 @@
 class CfgLoadouts
 {
-	class sweden_modern_d
-    {
-        displayName = "Army Desert";
-		category = "Sweden";
-        #include "loadouts\sweden_modern_d.hpp"
-    };
-	class sweden_modern_w
-    {
-        displayName = "Army Woodland";
-		category = "Sweden";
-        #include "loadouts\sweden_modern_w.hpp"
-    };
 	class french_army_w
     {
         displayName = "French Army Woodland";
@@ -24,35 +12,23 @@ class CfgLoadouts
 		category = "French";
         #include "loadouts\french_army_d.hpp"
     };
-	class ger_army
-    {
-        displayName = "German Army Flecktarn";
-		category = "Germany";
-        #include "loadouts\ger_army.hpp"
-    };
-	class ger_army_der
-    {
-        displayName = "German Army Tropentarn";
-		category = "Germany";
-        #include "loadouts\ger_army_d.hpp"
-    };
 	class rangers1990des
     {
         displayName = "Rangers 1990 Desert";
 		category = "American";
-        #include "loadouts\rangers1990des.hpp"
+        #include "loadouts\us_rangers_desert_1990.hpp"
     };
 	class rangers1990wdl
     {
         displayName = "Rangers 1990 Woodland";
 		category = "American";
-        #include "loadouts\rangers1990wdl.hpp"
+        #include "loadouts\us_rangers_woodland_1990.hpp"
     };
     class delta_90
     {
-        displayName = "Deltas 90s";
+        displayName = "Delta Force 1990";
 		category = "American";
-        #include "loadouts\delta90.hpp"
+        #include "loadouts\delta_force_1990.hpp"
     };
     class middle_east_militia
     {
@@ -64,13 +40,19 @@ class CfgLoadouts
     {
         displayName = "United Nations";
 		category = "Independents";
-        #include "loadouts\un.hpp"
+        #include "loadouts\united_nations.hpp"
     };
     class baf_mtp
     {
-        displayName = "British Armed Forces (MTP)";
+        displayName = "British Army 2000 MTP";
 		category = "British";
-        #include "loadouts\baf_mtp.hpp"
+        #include "loadouts\baf_2000_mtp.hpp"
+    };
+    class baf_wdl_1980
+    {
+        displayName = "British Army Woodland 1980";
+		category = "British";
+        #include "loadouts\baf_woodland_1980.hpp"
     };
     class ru_msv
     {
@@ -83,24 +65,6 @@ class CfgLoadouts
         displayName = "US Army OCP";
 		category = "American";
         #include "loadouts\us_army_ocp.hpp"
-    };
-    class us_army_ocp_2020
-    {
-        displayName = "US Army OCP 2020s";
-		category = "American";
-        #include "loadouts\us_army_ocp_2020.hpp"
-    };
-    class us_marines_d_2020
-    {
-        displayName = "US Marines Desert 2020s";
-		category = "American";
-        #include "loadouts\us_marines_d_2020.hpp"
-    };
-    class us_marines_w_2020
-    {
-        displayName = "US Marines Woodland 2020s";
-		category = "American";
-        #include "loadouts\us_marines_w_2020.hpp"
     };
     class us_marines_d
     {
@@ -126,28 +90,10 @@ class CfgLoadouts
 		category = "Russian";
         #include "loadouts\chdkz_insurgents.hpp"
     };
-    class private_military_company_des
+    class horizon
     {
-        displayName = "PMC Desert";
+        displayName = "Horizon Defence Force";
 		category = "Independents";
-        #include "loadouts\private_military_company_des.hpp"
-    };
-    class private_military_company_wdl
-    {
-        displayName = "PMC Woodland";
-		category = "Independents";
-        #include "loadouts\private_military_company_wdl.hpp"
-    };
-    class police
-    {
-        displayName = "Police";
-		category = "Independents";
-        #include "loadouts\police.hpp"
-    };
-    class criminals
-    {
-        displayName = "Criminals";
-		category = "Independents";
-        #include "loadouts\criminals.hpp"
+        #include "loadouts\horizon_defence_force.hpp"
     };
 };

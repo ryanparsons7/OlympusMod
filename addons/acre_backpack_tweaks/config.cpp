@@ -1,11 +1,11 @@
 class CfgPatches {
 	class ADDON
 	{
-        name = "USM Tweaks";
+        name = "ACRE Backpack Tweaks";
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = REQUIRED_VERSION;
-		requiredAddons[] = {"us_military_units"};
+		requiredAddons[] = {"us_military_units","fow_characters"};
 	};
 };
 

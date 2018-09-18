@@ -7,7 +7,7 @@ class baseMan {// Weaponless baseclass
      uniform[] = {"LOP_U_AM_Fatigue_01_4","LOP_U_AM_Fatigue_01_6","LOP_U_AM_Fatigue_01","LOP_U_AM_Fatigue_01_5","LOP_U_AM_Fatigue_01_2","LOP_U_AM_Fatigue_01_3","LOP_U_AM_Fatigue_02_3","LOP_U_AM_Fatigue_02_5","LOP_U_AM_Fatigue_02_6","LOP_U_AM_Fatigue_02_4"};
        vest[] = {"LOP_6sh46"};
        backpack[] = {};
-       headgear[] = {"","LOP_H_Turban","LOP_H_Turban_mask","LOP_H_Villager_cap","LOP_H_Pakol","CUP_H_TK_Lungee"};
+       headgear[] = {"","LOP_H_Turban","LOP_H_Turban_mask","LOP_H_Villager_cap","LOP_H_Pakol"};
        goggles[] = {};
        hmd[] = {};
     // Leave empty to remove all. "Default" > leave original item.
@@ -89,7 +89,7 @@ class car : r
 class m : car
 {
     displayName = "Medic";
-    backPack[] = {"CUP_B_AlicePack_Khaki"};
+    backPack[] = {"rhssaf_alice_smb"};
     items[] += {
         #include "medicalbackpack.hpp"
     };
@@ -351,7 +351,7 @@ class pp : smg
     uniform[] = {"TRYK_OVERALL_nok_flesh"};
     vest[] = {"V_TacVestIR_blk"};
 	hmd[] = {};
-    headgear[] = {"CUP_H_BAF_Helmet_Pilot"};
+    headgear[] = {"H_PilotHelmetHeli_O"};
 };
 class pcc : smg
 {
@@ -359,7 +359,7 @@ class pcc : smg
     uniform[] = {"TRYK_OVERALL_nok_flesh"};
     vest[] = {"V_TacVestIR_blk"};
 	hmd[] = {};
-    headgear[] = {"CUP_H_BAF_Helmet_Pilot"};
+    headgear[] = {"H_PilotHelmetHeli_O"};
 };
 class pc : pcc
 {
