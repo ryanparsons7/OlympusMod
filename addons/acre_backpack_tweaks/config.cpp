@@ -5,7 +5,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = REQUIRED_VERSION;
-		requiredAddons[] = {"us_military_units","fow_characters"};
+		requiredAddons[] = {"us_military_units"};
 	};
 };
 
