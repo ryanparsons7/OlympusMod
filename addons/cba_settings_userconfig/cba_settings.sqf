@@ -547,13 +547,13 @@ achilles_curator_vision_whitehotredcold = false;
 
 // ACRE2
 force acre_sys_core_fullDuplex = true;
-force acre_sys_core_ignoreAntennaDirection = false;
+force acre_sys_core_ignoreAntennaDirection = true;
 force acre_sys_core_interference = true;
 //acre_sys_core_postmixGlobalVolume = 1;
 //acre_sys_core_premixGlobalVolume = 1;
 force acre_sys_core_revealToAI = true;
 //acre_sys_core_spectatorVolume = 1;
-force acre_sys_core_terrainLoss = 0.5;
+force acre_sys_core_terrainLoss = 0.35;
 force acre_sys_core_ts3ChannelName = "ACRE2";
 force acre_sys_core_ts3ChannelPassword = "juno853";
 force acre_sys_core_ts3ChannelSwitch = true;
@@ -572,6 +572,8 @@ force adv_aceCPR_useLocation_AED = 0;
 
 // ADV - ACE Splint
 force adv_aceSplint_enable = true;
+force adv_aceSplint_reopenChance_medic = 0;
+force adv_aceSplint_reopenChance_regular = 30;
 force adv_aceSplint_reopenChance = 0;
 force adv_aceSplint_reopenTime = 600;
 force adv_aceSplint_reuseChance = 80;
