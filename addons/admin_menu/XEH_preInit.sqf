@@ -9,6 +9,7 @@ tac1_admin_local_uid = {""};
 //Set the admin IDs
 tac1_adminIDs = compileFinal '[
 	"76561198021222952",
+	"76561198072846060",
 	"76561198002304265"
 ]';
 
