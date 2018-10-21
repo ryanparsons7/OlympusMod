@@ -386,13 +386,13 @@ class eng : car
     backpack[] = {"usm_pack_alice"};
     magazines[] +=
     {
-        LIST_4("ClaymoreDirectionalMine_Remote_Mag")
-    };
-    backpackItems[] = {
+        LIST_3("IEDLandSmall_Remote_Mag"),
+        LIST_3("IEDUrbanSmall_Remote_Mag"),
+        "IEDLandBig_Remote_Mag",
+        "IEDUrbanBig_Remote_Mag",
+        "ACE_Cellphone",
         "MineDetector",
-        "ToolKit",
-        LIST_2("DemoCharge_Remote_Mag"),
-        LIST_2("SLAMDirectionalMine_Wire_Mag")
+        "ToolKit"
     };
     items[] += {"ACE_M26_Clacker","ACE_DefusalKit"};
 };
