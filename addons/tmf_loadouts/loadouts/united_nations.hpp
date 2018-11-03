@@ -63,7 +63,7 @@ class r : baseMan
     magazines[] =
     {
         LIST_8("rhs_30Rnd_545x39_AK"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_2("SmokeShell")
     };
 };

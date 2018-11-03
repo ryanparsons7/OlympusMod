@@ -613,62 +613,11 @@ force asr_ai3_skills_setskills = true;
 force asr_ai3_skills_teamsuperai = true;
 
 
-// CF_BAI
-force cf_bai_subskills_maximum_aimingAccuracy = 0;
-force cf_bai_subskills_maximum_aimingShake = 0;
-force cf_bai_subskills_maximum_aimingSpeed = 0;
-force cf_bai_subskills_maximum_commanding = 0;
-force cf_bai_subskills_maximum_courage = 0;
-force cf_bai_subskills_maximum_general = 0;
-force cf_bai_subskills_maximum_spotDistance = 0;
-force cf_bai_subskills_maximum_spotTime = 0;
-force cf_bai_subskills_minimum_aimingAccuracy = 0.41;
-force cf_bai_subskills_minimum_aimingShake = 0.5;
-force cf_bai_subskills_minimum_aimingSpeed = 0.5;
-force cf_bai_subskills_minimum_commanding = 0.5;
-force cf_bai_subskills_minimum_courage = 0.5;
-force cf_bai_subskills_minimum_general = 1;
-force cf_bai_subskills_minimum_spotDistance = 0.35;
-force cf_bai_subskills_minimum_spotTime = 0.5;
-force cf_bai_subskills_sleep = 30;
-force cf_bai_subskills_terrain_maximum_default = 30;
-force cf_bai_subskills_terrain_maximum_world_code = "[[""pja310"",25],[""Panthera3"",25]]";
-force cf_bai_subskills_terrain_range = 25;
-
-// CF_Woodland
-force cf_woodland_branches_check_side_reveal = 30;
-force cf_woodland_branches_check_time = 5;
-force cf_woodland_branches_initial_reveal = 0.7;
-force cf_woodland_branches_jogging_chance = 0.25;
-force cf_woodland_branches_jogging_range = 50;
-force cf_woodland_branches_maximum_reveal = 1.5;
-force cf_woodland_branches_prone_fast_chance = 0.25;
-force cf_woodland_branches_prone_fast_range = 50;
-force cf_woodland_branches_prone_medium_chance = 0.05;
-force cf_woodland_branches_prone_medium_range = 40;
-force cf_woodland_branches_prone_slow_chance = 0.01;
-force cf_woodland_branches_prone_slow_range = 25;
-force cf_woodland_branches_sprinting_chance = 0.9;
-force cf_woodland_branches_sprinting_range = 100;
-force cf_woodland_branches_tactical_chance = 0.05;
-force cf_woodland_branches_tactical_range = 40;
-force cf_woodland_branches_terrain_count = 1;
-force cf_woodland_branches_terrain_distance = 3;
-force cf_woodland_branches_walking_chance = 0.01;
-force cf_woodland_branches_walking_range = 25;
-
 // Diwako's ACE Ragdolling
 force diwako_ragdoll_ai = true;
 force diwako_ragdoll_ragdolling = true;
 force diwako_ragdoll_server_only = false;
 
-// Dynamic View Distance
-force DVD_applyBaseViewDistance = false;
-force DVD_baseViewDistance = 5;
-force DVD_enabled = true;
-force DVD_maxAltSetting = 5;
-//DVD_maxViewSetting = 30;
-//DVD_startingAltSetting = 0.5;
 
 // Laxemann Align
 force L_Align_enabled = true;

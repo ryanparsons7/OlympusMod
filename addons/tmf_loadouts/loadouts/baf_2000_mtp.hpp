@@ -59,13 +59,13 @@ class r : baseMan
     vest[] = {"UK3CB_BAF_V_Osprey_Rifleman_A","UK3CB_BAF_V_Osprey_Rifleman_B","UK3CB_BAF_V_Osprey_Rifleman_C","UK3CB_BAF_V_Osprey_Rifleman_D","UK3CB_BAF_V_Osprey_Rifleman_E","UK3CB_BAF_V_Osprey_Rifleman_F"};
     backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B"};
     primaryWeapon[] = {"UK3CB_BAF_L85A2_RIS"};
-    scope[] = {"UK3CB_BAF_Eotech"};
+    scope[] = {"rhsusf_acc_eotech_552"};
     attachment[] = {"uk3cb_baf_llm_flashlight_black"};
     magazines[] =
     {
         LIST_8("UK3CB_BAF_556_30Rnd"),
         LIST_2("UK3CB_BAF_556_30Rnd_T"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_2("SmokeShell")
     };
 };
@@ -76,7 +76,7 @@ class g : r
     primaryWeapon[] = {"UK3CB_BAF_L85A2_UGL_HWS"};
     magazines[] +=
     {
-        LIST_5("1Rnd_HE_Grenade_shell"),
+        LIST_3("1Rnd_HE_Grenade_shell"),
         LIST_3("1Rnd_Smoke_Grenade_shell")
     };
 };

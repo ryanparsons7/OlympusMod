@@ -63,7 +63,7 @@ class r : baseMan
     magazines[] =
     {
         LIST_5("hlc_30Rnd_545x39_B_AK"),
-        LIST_2("rhs_mag_rgn"),
+        LIST_1("rhs_mag_rgn"),
         LIST_1("rhs_mag_rdg2_white")
     };
 };
@@ -75,7 +75,7 @@ class g : r
     magazines[] +=
     {
         LIST_3("hlc_VOG25_AK"),
-        LIST_2("hlc_GRD_White")
+        LIST_3("hlc_GRD_White")
     };
 };
 class car : r

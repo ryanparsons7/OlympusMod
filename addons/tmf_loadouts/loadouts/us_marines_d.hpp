@@ -59,13 +59,13 @@ class r : baseMan
     vest[] = {"rhsusf_spc_rifleman"};
     backpack[] = {"rhsusf_assault_eagleaiii_coy"};
     primaryWeapon[] = {"rhs_weap_m4_carryhandle"};
-    scope[] = {"rhsusf_acc_eotech_552"};
+    scope[] = {"rhsusf_acc_compm4"};
     attachment[] = {"rhsusf_acc_wmx_bk"};
     magazines[] =
     {
         LIST_6("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
         LIST_2("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_2("SmokeShell")
     };
 };
@@ -76,7 +76,7 @@ class g : r
     primaryWeapon[] = {"rhs_weap_m4a1_carryhandle_m203"};
     magazines[] +=
     {
-        LIST_5("1Rnd_HE_Grenade_shell"),
+        LIST_3("1Rnd_HE_Grenade_shell"),
         LIST_3("1Rnd_Smoke_Grenade_shell")
     };
 };

@@ -57,14 +57,14 @@ class r : baseMan
     headgear[] = {"usm_helmet_pasgt_g_dcu"};
     vest[] = {"usm_vest_rba_lbv_rm"};
     backpack[] = {};
-    primaryWeapon[] = {"rhs_weap_m16a4_carryhandle"};
+    primaryWeapon[] = {"gst_m16a2","gst_m16a2_2"};
     scope[] = {};
     attachment[] = {};
     magazines[] =
     {
         LIST_8("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
         LIST_2("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_2("SmokeShell")
     };
 };
@@ -72,17 +72,17 @@ class g : r
 {
     displayName = "Grenadier";
     vest[] = {"usm_vest_rba_lbv_gr"};
-    primaryWeapon[] = {"rhs_weap_m16a4_carryhandle_M203"};
+    primaryWeapon[] = {"gst_m16a2_gl"};
     magazines[] +=
     {
-        LIST_5("1Rnd_HE_Grenade_shell"),
+        LIST_3("1Rnd_HE_Grenade_shell"),
         LIST_3("1Rnd_Smoke_Grenade_shell")
     };
 };
 class car : r
 {
     displayName = "Carabinier";
-    primaryWeapon[] = {"rhs_weap_m16a4_carryhandle"};
+    primaryWeapon[] = {"gst_m16a2","gst_m16a2_2"};
     magazines[] =
     {
         LIST_8("rhs_mag_30Rnd_556x45_M855A1_Stanag"),

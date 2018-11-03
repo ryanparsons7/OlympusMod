@@ -61,7 +61,7 @@ class r : baseMan
     magazines[] =
     {
         LIST_6("rhs_30Rnd_762x39mm"),
-        LIST_2("rhs_mag_rgd5"),
+        LIST_1("rhs_mag_rgd5"),
         LIST_2("rhs_mag_rdg2_white")
     };
 };
@@ -71,7 +71,7 @@ class g : r
     primaryWeapon[] = {"rhs_weap_akm_gp25"};
     magazines[] +=
     {
-        LIST_5("rhs_VOG25"),
+        LIST_3("rhs_VOG25"),
         LIST_3("rhs_VG40OP_white")
     };
 };

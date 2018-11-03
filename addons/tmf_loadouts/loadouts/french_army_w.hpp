@@ -65,7 +65,7 @@ class r : baseMan
     {
         LIST_8("R3F_25Rnd_556x45_FAMAS"),
         LIST_2("R3F_25Rnd_556x45_TRACER_FAMAS"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_2("SmokeShell")
     };
 };
@@ -75,8 +75,8 @@ class g : r
     primaryWeapon[] = {"R3F_Famas_F1_M203"};
     magazines[] +=
     {
-        LIST_5("1Rnd_HE_Grenade_shell"),
-        LIST_2("1Rnd_Smoke_Grenade_shell")
+        LIST_3("1Rnd_HE_Grenade_shell"),
+        LIST_3("1Rnd_Smoke_Grenade_shell")
     };
 };
 class car : r

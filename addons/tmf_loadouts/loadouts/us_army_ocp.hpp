@@ -8,7 +8,7 @@ class baseMan {// Weaponless baseclass
        vest[] = {};
        backpack[] = {};
        headgear[] = {};
-       goggles[] = {};
+       goggles[] = {"rhs_ess_black","rhs_googles_black","rhs_googles_clear"};
        hmd[] = {"rhsusf_ANPVS_14"};
     // Leave empty to remove all. "Default" > leave original item.
 
@@ -59,7 +59,7 @@ class r : baseMan
     vest[] = {"rhsusf_iotv_ocp_Rifleman"};
     backpack[] = {"rhsusf_assault_eagleaiii_ocp"};
     primaryWeapon[] = {"rhs_weap_m4a1_carryhandle"};
-    scope[] = {"rhsusf_acc_eotech_552"};
+    scope[] = {"rhsusf_acc_compm4"};
     attachment[] = {"rhsusf_acc_wmx_bk"};
     magazines[] =
     {
@@ -76,8 +76,8 @@ class g : r
     primaryWeapon[] = {"rhs_weap_m4a1_carryhandle_m203"};
     magazines[] +=
     {
-        LIST_5("1Rnd_HE_Grenade_shell"),
-        LIST_2("1Rnd_Smoke_Grenade_shell")
+        LIST_3("1Rnd_HE_Grenade_shell"),
+        LIST_3("1Rnd_Smoke_Grenade_shell")
     };
 };
 class car : r
@@ -148,12 +148,12 @@ class jtac : co
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    primaryWeapon[] = {"rhs_weap_m249_pip_S_vfg"};
-    scope[] = {"rhsusf_acc_ELCAN"};
+    primaryWeapon[] = {"rhs_weap_m249_pip_S"};
+    scope[] = {"rhsusf_acc_elcan_ard"};
     sidearmWeapon[] = {"rhsusf_weap_m9"};
     magazines[] =
     {
-		LIST_6("rhsusf_200rnd_556x45_mixed_box"),
+		LIST_6("rhsusf_100Rnd_556x45_soft_pouch"),
         "HandGrenade",
         "SmokeShell",
         LIST_4("rhsusf_mag_15Rnd_9x19_JHP")
@@ -164,7 +164,7 @@ class aar : r
     displayName = "Assistant Automatic Rifleman";
     backpackItems[] =
     {
-		LIST_4("rhsusf_200rnd_556x45_mixed_box")
+		LIST_4("rhsusf_100Rnd_556x45_soft_pouch")
     };
     linkedItems[] += {"Binocular"};
 };

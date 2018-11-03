@@ -64,7 +64,7 @@ class r : baseMan
     {
         LIST_6("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
         LIST_2("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_2("SmokeShell")
     };
 };
@@ -74,7 +74,7 @@ class g : r
     primaryWeapon[] = {"hlc_rifle_Colt727_GL"};
     magazines[] +=
     {
-        LIST_5("1Rnd_HE_Grenade_shell"),
+        LIST_3("1Rnd_HE_Grenade_shell"),
         LIST_3("1Rnd_Smoke_Grenade_shell")
     };
 };
