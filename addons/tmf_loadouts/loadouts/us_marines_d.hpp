@@ -88,7 +88,7 @@ class car : r
     {
         LIST_8("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
         LIST_2("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_2("SmokeShell")
     };
 };
@@ -185,7 +185,7 @@ class dm : r
     {
         LIST_6("rhsusf_20Rnd_762x51_m118_special_Mag"),
         LIST_2("rhsusf_20Rnd_762x51_m62_Mag"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_2("SmokeShell")
     };
 };
@@ -336,7 +336,7 @@ class sn : r
     magazines[] =
     {
         LIST_9("rhsusf_10Rnd_762x51_m118_special_Mag"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_4("hlc_13Rnd_9x19_B_P228")
     };
     items[] += {

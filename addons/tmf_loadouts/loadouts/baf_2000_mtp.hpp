@@ -88,7 +88,7 @@ class car : r
     {
         LIST_8("UK3CB_BAF_556_30Rnd"),
         LIST_2("UK3CB_BAF_556_30Rnd_T"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_2("SmokeShell")
     };
 };
@@ -188,7 +188,7 @@ class dm : r
     {
         LIST_6("UK3CB_BAF_556_30Rnd"),
         LIST_2("UK3CB_BAF_556_30Rnd_T"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_2("SmokeShell")
     };
 };
@@ -327,7 +327,7 @@ class sn : r
     magazines[] =
     {
         LIST_9("UK3CB_BAF_338_5Rnd"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_4("UK3CB_BAF_9_17Rnd")
     };
     items[] += {

@@ -84,7 +84,7 @@ class car : r
     magazines[] =
     {
         LIST_8("rhs_30Rnd_545x39_AK"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_2("SmokeShell")
     };
 };
@@ -167,7 +167,7 @@ class dm : r
     magazines[] =
     {
         LIST_10("hlc_20Rnd_762x51_B_M14"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_2("SmokeShell")
     };
 };
@@ -302,7 +302,7 @@ class sn : r
     magazines[] =
     {
         LIST_9("rhsusf_5Rnd_762x51_m118_special_Mag"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_4("rhs_mag_9x18_8_57N181S")
     };
     items[] += {

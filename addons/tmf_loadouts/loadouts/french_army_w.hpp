@@ -168,7 +168,7 @@ class dm : r
     magazines[] =
     {
         LIST_6("R3F_20Rnd_762x51_HK417"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_2("SmokeShell")
     };
 };
@@ -313,7 +313,7 @@ class sn : r
     magazines[] =
     {
         LIST_9("R3F_5Rnd_127x99_TAC50"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_4("R3F_15Rnd_9x19_PAMAS")
     };
     items[] += {

@@ -298,7 +298,7 @@ class sn : r
     magazines[] =
     {
         LIST_9("UK3CB_BAF_338_5Rnd"),
-        LIST_2("HandGrenade"),
+        LIST_1("HandGrenade"),
         LIST_4("rhsusf_mag_7x45acp_MHP")
     };
     items[] += {
