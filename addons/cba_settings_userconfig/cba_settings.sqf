@@ -106,6 +106,7 @@ ace_interact_menu_useListMenu = true;
 
 // ACE Logistics
 force ace_cargo_enable = true;
+force ace_cargo_loadTimeCoefficient = 5;
 force ace_cargo_paradropTimeCoefficent = 2.5;
 force ace_rearm_level = 0;
 force ace_rearm_supply = 0;
@@ -208,6 +209,11 @@ force ace_mk6mortar_useAmmoHandling = true;
 
 // ACE Name Tags
 force ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
+force ace_nametags_nametagColorBlue = [0.67,0.67,1,1];
+force ace_nametags_nametagColorGreen = [0.67,1,0.67,1];
+force ace_nametags_nametagColorMain = [1,1,1,1];
+force ace_nametags_nametagColorRed = [1,0.67,0.67,1];
+force ace_nametags_nametagColorYellow = [1,1,0.67,1];
 force ace_nametags_playerNamesMaxAlpha = 0.8;
 force ace_nametags_playerNamesViewDistance = 5;
 force ace_nametags_showCursorTagForVehicles = false;
@@ -253,6 +259,7 @@ force ace_pylons_timePerPylon = 5;
 // ACE Quick Mount
 force ace_quickmount_distance = 3;
 force ace_quickmount_enabled = true;
+force ace_quickmount_enableMenu = 3;
 force ace_quickmount_priority = 0;
 force ace_quickmount_speed = 18;
 
@@ -296,6 +303,7 @@ force ace_hitreactions_minDamageToTrigger = 0.1;
 //ace_inventory_inventoryDisplaySize = 0;
 force ace_laser_dispersionCount = 2;
 force ace_microdagr_mapDataAvailable = 2;
+force ace_microdagr_waypointPrecision = 3;
 force ace_optionsmenu_showNewsOnMainMenu = true;
 force ace_overpressure_distanceCoefficient = 1;
 
@@ -367,6 +375,7 @@ force ace_winddeflection_vehicleEnabled = true;
 
 // ACE Zeus
 force ace_zeus_autoAddObjects = false;
+force ace_zeus_canCreateZeus = 0;
 force ace_zeus_radioOrdnance = false;
 force ace_zeus_remoteWind = false;
 force ace_zeus_revealMines = 0;
@@ -629,8 +638,15 @@ force L_Immerse_force = false;
 force L_Immerse_recoil = true;
 force L_Immerse_twitch = true;
 
-// Laxemann Suppress
+// LAxemann's Suppress
+force L_Suppress_buildup = 1;
 force L_Suppress_enabled = true;
+force L_Suppress_flyByEffects = true;
+force L_Suppress_flyByIntensity = 1;
+force L_Suppress_halting = true;
+force L_Suppress_intensity = 1;
+force L_Suppress_playerSwabEnabled = true;
+force L_Suppress_recovery = 1;
 
 // NIArms
 force niarms_magSwitch = true;
