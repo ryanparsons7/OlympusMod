@@ -4,10 +4,10 @@
 class baseMan {// Weaponless baseclass
     displayName = "Unarmed";
     // All randomized.
-     uniform[] = {"LOP_U_AM_Fatigue_01_4","LOP_U_AM_Fatigue_01_6","LOP_U_AM_Fatigue_01","LOP_U_AM_Fatigue_01_5","LOP_U_AM_Fatigue_01_2","LOP_U_AM_Fatigue_01_3","LOP_U_AM_Fatigue_02_3","LOP_U_AM_Fatigue_02_5","LOP_U_AM_Fatigue_02_6","LOP_U_AM_Fatigue_02_4"};
-       vest[] = {"LOP_6sh46"};
+     uniform[] = {"UK3CB_TKM_I_U_01","UK3CB_TKM_I_U_03","UK3CB_TKM_I_U_04","UK3CB_TKM_I_U_05","UK3CB_TKM_I_U_06"};
+       vest[] = {"UK3CB_V_Pouch"};
        backpack[] = {};
-       headgear[] = {"","LOP_H_Turban","LOP_H_Turban_mask","LOP_H_Villager_cap","LOP_H_Pakol"};
+       headgear[] = {"UK3CB_TKM_I_H_Turban_03_1","UK3CB_TKM_I_H_Turban_04_1","UK3CB_TKM_I_H_Turban_05_1","UK3CB_TKM_I_H_Turban_01_1","UK3CB_TKM_I_H_Turban_02_1"};
        goggles[] = {};
        hmd[] = {};
     // Leave empty to remove all. "Default" > leave original item.
@@ -291,7 +291,7 @@ class mtrag : r
 class samg : car
 {
     displayName = "AA Missile Specialist";
-    backpack[] = {"usm_pack_alice"};
+    backpack[] = {"rhsgref_wdl_alicepack"};
     secondaryWeapon[] = {"rhs_weap_fim92"};
     magazines[] +=
     {
@@ -301,7 +301,7 @@ class samg : car
 class samag : car
 {
     displayName = "AA Assistant Missile Specialist";
-    backpack[] = {"usm_pack_alice"};
+    backpack[] = {"rhsgref_wdl_alicepack"};
     backpackItems[] =
     {
         LIST_1("rhs_fim92_mag")
@@ -331,12 +331,12 @@ class vc : smg
 {
     displayName = "Vehicle Commander";
 	hmd[] = {};
-    headgear[] = {"usm_helmet_cvc"};
+    headgear[] = {"UK3CB_H_Crew_Cap"};
 };
 class vd : vc
 {
     displayName = "Vehicle Driver";
-    backpack[] = {"usm_pack_alice"};
+    backpack[] = {"rhsgref_wdl_alicepack"};
     items[] += {
 	"ToolKit"
 	};
@@ -383,7 +383,7 @@ class jp : baseMan
 class eng : car
 {
     displayName = "Combat Engineer (Explosives)";
-    backpack[] = {"usm_pack_alice"};
+    backpack[] = {"rhsgref_wdl_alicepack"};
     magazines[] +=
     {
         LIST_3("IEDLandSmall_Remote_Mag"),
@@ -399,7 +399,7 @@ class eng : car
 class engm : car
 {
     displayName = "Combat Engineer (Mines)";
-    backpack[] = {"usm_pack_alice"};
+    backpack[] = {"rhsgref_wdl_alicepack"};
     items[] +=
     {
         LIST_2("APERSBoundingMine_Range_Mag"),
