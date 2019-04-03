@@ -133,7 +133,7 @@ class sl : ftl
     sidearmWeapon[] = {"rhsusf_weap_m9"};
     magazines[] +=
     {
-        LIST_3("rhsusf_mag_15Rnd_9x19_JHP")
+        LIST_2("rhsusf_mag_15Rnd_9x19_JHP")
     };
 };
 class co : sl

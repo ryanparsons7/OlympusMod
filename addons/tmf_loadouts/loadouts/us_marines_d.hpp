@@ -133,7 +133,7 @@ class sl : ftl
     sidearmWeapon[] = {"hlc_Pistol_M11A1"};
     magazines[] +=
     {
-        LIST_3("hlc_13Rnd_9x19_B_P228")
+        LIST_("hlc_13Rnd_9x19_B_P228")
     };
 };
 class co : sl

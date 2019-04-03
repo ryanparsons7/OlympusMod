@@ -1,46 +1,10 @@
 class CfgLoadouts
 {
-	class french_army_w
+	class middle_east_militia
     {
-        displayName = "French Army Woodland";
-		category = "French";
-        #include "loadouts\french_army_w.hpp"
-    };
-	class french_army_d
-    {
-        displayName = "French Army Desert";
-		category = "French";
-        #include "loadouts\french_army_d.hpp"
-    };
-	class rangers1990des
-    {
-        displayName = "Rangers 1990 Desert";
-		category = "American";
-        #include "loadouts\us_rangers_desert_1990.hpp"
-    };
-	class rangers1990wdl
-    {
-        displayName = "Rangers 1990 Woodland";
-		category = "American";
-        #include "loadouts\us_rangers_woodland_1990.hpp"
-    };
-    class delta_90
-    {
-        displayName = "Delta Force 1990";
-		category = "American";
-        #include "loadouts\delta_force_1990.hpp"
-    };
-    class middle_east_militia
-    {
-        displayName = "Middle East Militia";
+        displayName = "Takistan Militia/Tribals";
 		category = "Middle East";
         #include "loadouts\middle_east_militia.hpp"
-    };
-    class un
-    {
-        displayName = "United Nations";
-		category = "Independents";
-        #include "loadouts\united_nations.hpp"
     };
     class baf_mtp
     {
@@ -95,5 +59,35 @@ class CfgLoadouts
         displayName = "Horizon Defence Force";
 		category = "Independents";
         #include "loadouts\horizon_defence_force.hpp"
+    };
+    class unsc_woodland
+    {
+        displayName = "UNSC Woodland";
+		category = "Halo";
+        #include "loadouts\unsc_woodland.hpp"
+    };
+    class unsc_odst
+    {
+        displayName = "UNSC ODST";
+		category = "Halo";
+        #include "loadouts\unsc_odst.hpp"
+    };
+    class tak_national_army
+    {
+        displayName = "Takistan National Army";
+		category = "OPFOR";
+        #include "loadouts\tak_national_army.hpp"
+    };
+    class che_nationalist_militia
+    {
+        displayName = "Chernarus Nationalist Militia";
+		category = "Independents";
+        #include "loadouts\che_nationalist_militia.hpp"
+    };
+    class afg_national_army
+    {
+        displayName = "Afghan National Army";
+		category = "BLUFOR";
+        #include "loadouts\afg_national_army.hpp"
     };
 };

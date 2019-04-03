@@ -235,17 +235,17 @@ class matag : r
 class hatg : r
 {
     displayName = "HAT Gunner";
-    backPack[] = {"Redd_Milan_Static_Barrel"};
+    backPack[] = {"rhs_Tow_Gun_Bag"};
 };
 class hatac : r
 {
     displayName = "HAT Ammo Carrier";
-    backPack[] = {"Redd_Milan_Static_Barrel"};
+    backPack[] = {"rhs_Tow_Gun_Bag"};
 };
 class hatag : r
 {
     displayName = "HAT Assistant Gunner";
-    backPack[] = {"Redd_Milan_Static_Tripod"};
+    backPack[] = {"rhs_TOW_Tripod_Bag"};
     linkedItems[] += {"Binocular"};
 };
 class mtrg : r

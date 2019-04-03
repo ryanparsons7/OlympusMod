@@ -291,7 +291,7 @@ class mtrag : r
 class samg : car
 {
     displayName = "AA Missile Specialist";
-    backpack[] = {"usm_pack_alice"};
+    backpack[] = {"rhsgref_wdl_alicepack"};
     secondaryWeapon[] = {"rhs_weap_fim92"};
     magazines[] +=
     {
@@ -301,7 +301,7 @@ class samg : car
 class samag : car
 {
     displayName = "AA Assistant Missile Specialist";
-    backpack[] = {"usm_pack_alice"};
+    backpack[] = {"rhsgref_wdl_alicepack"};
     backpackItems[] =
     {
         LIST_1("rhs_fim92_mag")
@@ -336,7 +336,7 @@ class vc : smg
 class vd : vc
 {
     displayName = "Vehicle Driver";
-    backpack[] = {"usm_pack_alice"};
+    backpack[] = {"rhsgref_wdl_alicepack"};
     items[] += {
 	"ToolKit"
 	};
@@ -381,7 +381,7 @@ class jp : baseMan
 class eng : car
 {
     displayName = "Combat Engineer (Explosives)";
-    backpack[] = {"usm_pack_alice"};
+    backpack[] = {"rhsgref_wdl_alicepack"};
     magazines[] +=
     {
         LIST_4("ClaymoreDirectionalMine_Remote_Mag")
@@ -397,7 +397,7 @@ class eng : car
 class engm : car
 {
     displayName = "Combat Engineer (Mines)";
-    backpack[] = {"usm_pack_alice"};
+    backpack[] = {"rhsgref_wdl_alicepack"};
     items[] +=
     {
         LIST_2("APERSBoundingMine_Range_Mag"),
