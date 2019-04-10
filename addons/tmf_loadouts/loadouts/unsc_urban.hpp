@@ -4,12 +4,12 @@
 class baseMan {// Weaponless baseclass
     displayName = "Unarmed";
     // All randomized.
-       uniform[] = {"UK3CB_BAF_U_Smock_DPMW"};
+     uniform[] = {"OPTRE_UNSC_Army_Uniform_URB_SlimLeg"};
        vest[] = {};
-       backpack[] = {"UK3CB_BAF_B_Bergen_DPMW_Rifleman_A"};
+       backpack[] = {};
        headgear[] = {};
        goggles[] = {};
-       hmd[] = {};
+       hmd[] = {"OPTRE_NVG"};
     // Leave empty to remove all. "Default" > leave original item.
 
     // All randomized
@@ -31,8 +31,8 @@ class baseMan {// Weaponless baseclass
     magazines[] = {};
     items[] =
     {
-		#include "basicitems.hpp"
-        #include "basicmedical.hpp"
+		#include "basicitems_optre.hpp"
+        #include "basicmedical_optre.hpp"
     };
 	
     // These are added directly into their respective slots
@@ -55,198 +55,202 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    headgear[] = {"UK3CB_BAF_H_Mk6_DPMW_A"};
-    vest[] = {"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW"};
-    primaryWeapon[] = {"UK3CB_BAF_L1A1"};
-    scope[] = {};
-    attachment[] = {};
+    headgear[] = {"OPTRE_UNSC_CH252_Helmet_URB"};
+    vest[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB"};
+    backPack[] = {"OPTRE_UNSC_Rucksack"};
+    primaryWeapon[] = {"OPTRE_MA37"};
     magazines[] =
     {
-        LIST_8("UK3CB_BAF_762_20Rnd"),
-        LIST_1("HandGrenade"),
-        "SmokeShell"
+        LIST_8("OPTRE_32Rnd_762x51_Mag"),
+        LIST_1("OPTRE_M9_Frag"),
+        LIST_2("SmokeShell")
     };
 };
 class g : r
 {
     displayName = "Grenadier";
+    primaryWeapon[] = {"OPTRE_MA37GL"};
+    magazines[] +=
+    {
+        LIST_3("1Rnd_HE_Grenade_shell"),
+        LIST_3("1Rnd_Smoke_Grenade_shell")
+    };
 };
 class car : r
 {
     displayName = "Carabinier";
+    primaryWeapon[] = {"OPTRE_BR55HB"};
+    scope[] = {"optre_br55hb_scope"};
+    magazines[] =
+    {
+        LIST_8("OPTRE_36Rnd_95x40_Mag"),
+        LIST_1("OPTRE_M9_Frag"),
+        LIST_2("SmokeShell")
+    };
 };
 class m : r
 {
     displayName = "Medic";
-    backPack[] = {"UK3CB_BAF_B_Carryall_DPMW"};
+    headgear[] = {"OPTRE_UNSC_CH252_Helmet2_URB_MED"};
+    vest[] = {"OPTRE_UNSC_M52A_Armor_Medic_URB"};
+    backPack[] = {"OPTRE_UNSC_Rucksack_Medic"};
     items[] += {
-        #include "medicalbackpack.hpp"
+        #include "medicalbackpack_optre.hpp"
     };
 };
 class smg : r
 {
     displayName = "Submachinegunner";
-    primaryWeapon[] = {"hlc_smg_mp5a2"};
+    primaryWeapon[] = {"OPTRE_M7"};
     scope[] = {};
     magazines[] =
     {
-        LIST_6("hlc_30Rnd_9x19_B_MP5"),
-        "HandGrenade",
+        LIST_3("OPTRE_60Rnd_5x23mm_Mag"),
+        "OPTRE_M9_Frag",
         LIST_2("SmokeShell")
     };
 };
 class ftl : g
 {
     displayName = "Fireteam Leader";
+    vest[] = {"OPTRE_UNSC_M52A_Armor_TL_URB"};
     magazines[] +=
     {
+        LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
+        LIST_2("1Rnd_SmokeRed_Grenade_shell"),
         LIST_2("SmokeShellGreen"),
 		"Laserbatteries"
     };
-    linkedItems[] += {"UK3CB_BAF_Soflam_Laserdesignator"};
+    linkedItems[] += {"OPTRE_Smartfinder"};
 };
 class sl : ftl
 {
     displayName = "Squad Leader";
-    sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
-    headgear[] = {"UK3CB_BAF_H_Beret_RM_Bootneck_PRR"};
-    backPack[] = {"UK3CB_BAF_B_Bergen_DPMW_SL_A"};
+    sidearmWeapon[] = {"OPTRE_M6C"};
     magazines[] +=
     {
-        LIST_3("rhsusf_mag_7x45acp_MHP")
+        LIST_3("OPTRE_12Rnd_127x40_Mag")
     };
 };
 class co : sl
 {
     displayName = "Platoon Leader";
+    backPack[] = {"OPTRE_ANPRC_521_Green"};
     radios[] = {"ACRE_PRC117F"};
 };
 class jtac : co
 {
     displayName = "Joint Terminal Attack Controller";
-    backPack[] = {"UK3CB_BAF_B_Bergen_DPMW_JTAC_A"};
 };
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    primaryWeapon[] = {"UK3CB_BAF_L110A1"};
-    vest[] = {"UK3CB_BAF_V_PLCE_Webbing_Plate_DPMW"};
-    sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
+    vest[] = {"OPTRE_UNSC_M52A_Armor_MG_URB"};
+    backPack[] = {"OPTRE_UNSC_Rucksack_Heavy"};
+    primaryWeapon[] = {"OPTRE_M73"};
+    scope[] = {"optre_m73_smartlink"};
+    bipod[] = {"bipod_01_f_blk"};
+    sidearmWeapon[] = {"OPTRE_M6C"};
     magazines[] =
     {
-        LIST_3("UK3CB_BAF_556_200Rnd"),
-        LIST_1("UK3CB_BAF_556_200Rnd_T"),
-        "HandGrenade",
+        LIST_3("OPTRE_200Rnd_95x40_Box"),
+        "OPTRE_M9_Frag",
         "SmokeShell",
-        LIST_4("rhsusf_mag_7x45acp_MHP")
+        LIST_2("OPTRE_12Rnd_127x40_Mag")
     };
 };
 class aar : r
 {
     displayName = "Assistant Automatic Rifleman";
+    backPack[] = {"OPTRE_UNSC_Rucksack_Heavy"};
     backpackItems[] =
     {
-        LIST_2("UK3CB_BAF_556_200Rnd")
+        LIST_3("OPTRE_200Rnd_95x40_Box")
     };
-    linkedItems[] += {"Binocular"};
+    linkedItems[] += {"OPTRE_Binoculars"};
 };
 class rat : car
 {
     displayName = "Rifleman (AT)";
-    secondaryWeapon[] = {"rhs_weap_m72a7"};
 };
 class dm : r
 {
     displayName = "Designated Marksman";
-    scope[] = {"hlc_optic_suit"};
+    primaryWeapon[] = {"OPTRE_M392_DMR"};
+    scope[] = {"optre_m392_scope"};
+    magazines[] =
+    {
+        LIST_7("OPTRE_15Rnd_762x51_Mag"),
+        LIST_2("OPTRE_15Rnd_762x51_Mag_Tracer"),
+        LIST_1("OPTRE_M9_Frag"),
+        LIST_2("SmokeShell")
+    };
 };
 class mmgg : ar
 {
     displayName = "MMG Gunner";
-    primaryWeapon[] = {"UK3CB_BAF_L7A2"};
-    scope[] = {};
-    magazines[] =
-    {
-        LIST_3("UK3CB_BAF_762_100Rnd"),
-        LIST_1("UK3CB_BAF_762_100Rnd_T"),
-        "HandGrenade",
-        "SmokeShell",
-        LIST_4("rhsusf_mag_7x45acp_MHP")
-    };
 };
-class mmgac : r
+class mmgac : aar
 {
     displayName = "MMG Ammo Carrier";
-    backpackItems[] =
-    {
-        LIST_3("UK3CB_BAF_762_100Rnd")
-    };
 };
 class mmgag : aar
 {
     displayName = "MMG Assistant Gunner";
-    backpackItems[] =
-    {
-        LIST_3("UK3CB_BAF_762_100Rnd")
-    };
-    linkedItems[] += {"Binocular"};
 };
-class hmgg : r
+class hmgg : ar
 {
     displayName = "HMG Gunner";
-    backPack[] = {"RHS_M2_Gun_Bag"};
-
 };
-class hmgac : r
+class hmgac : aar
 {
     displayName = "HMG Ammo Carrier";
-    backPack[] = {"RHS_M2_Gun_Bag"};
 };
-class hmgag : r
+class hmgag : aar
 {
     displayName = "HMG Assistant Gunner";
-    backPack[] = {"RHS_M2_Tripod_Bag"};
-    linkedItems[] += {"Binocular"};
 };
 class matg : r
 {
     displayName = "MAT Gunner";
-    secondaryWeapon[] = {"rhs_weap_maaws"};
-    magazines[] +=
-    {
-        LIST_2("rhs_mag_maaws_HEAT"),
-        "rhs_mag_maaws_HEDP"
+    secondaryWeapon[] = {"OPTRE_M41_SSR"};
+    backpackItems[] = {
+        LIST_2("OPTRE_M41_Twin_HEAT"),
+        "OPTRE_M41_Twin_HEAP"
     };
 };
 class matac : r
 {
     displayName = "MAT Ammo Carrier";
-    magazines[] +=
-    {
-        LIST_2("rhs_mag_maaws_HEAT"),
-        "rhs_mag_maaws_HEDP"
+    backpackItems[] = {
+        LIST_2("OPTRE_M41_Twin_HEAT"),
+        "OPTRE_M41_Twin_HEAP"
     };
 };
 class matag : r
 {
     displayName = "MAT Assistant Gunner";
-    linkedItems[] += {"Binocular"};
+    linkedItems[] += {"OPTRE_Binoculars"};
 };
 class hatg : r
 {
     displayName = "HAT Gunner";
-    backPack[] = {"rhs_Tow_Gun_Bag"};
+    secondaryWeapon[] = {"OPTRE_M41_SSR_G"};
+    backpackItems[] = {
+        LIST_3("OPTRE_M41_Twin_HEAT_G")
+    };
 };
 class hatac : r
 {
     displayName = "HAT Ammo Carrier";
-    backPack[] = {"rhs_Tow_Gun_Bag"};
+    backpackItems[] = {
+        LIST_3("OPTRE_M41_Twin_HEAT_G")
+    };
 };
 class hatag : r
 {
     displayName = "HAT Assistant Gunner";
-    backPack[] = {"rhs_TOW_Tripod_Bag"};
-    linkedItems[] += {"Binocular"};
+    linkedItems[] += {"OPTRE_Binoculars"};
 };
 class mtrg : r
 {
@@ -291,15 +295,16 @@ class samag : r
 class sn : r
 {
     displayName = "Sniper";
-    uniform[] = {"UK3CB_BAF_U_CombatUniform_MTP_Ghillie_RM"};
-    primaryWeapon[] = {"UK3CB_BAF_L115A3_Ghillie"};
-    scope[] = {"rhsusf_acc_leupoldmk4_wd"};
-    sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
+    primaryWeapon[] = {"OPTRE_SRS99C"};
+    scope[] = {"optre_srs99c_scope"};
+    sidearmWeapon[] = {"OPTRE_M6C"};
     magazines[] =
     {
-        LIST_9("UK3CB_BAF_338_5Rnd"),
-        LIST_1("HandGrenade"),
-        LIST_4("rhsusf_mag_7x45acp_MHP")
+        LIST_4("OPTRE_4Rnd_145x114_APFSDS_Mag"),
+        LIST_4("OPTRE_4Rnd_145x114_HEDP_Mag"),
+        LIST_4("OPTRE_4Rnd_145x114_HVAP_Mag"),
+        LIST_1("OPTRE_M9_Frag"),
+        LIST_4("OPTRE_12Rnd_127x40_Mag")
     };
     items[] += {
 	#include "sniperitems.hpp"
@@ -309,103 +314,78 @@ class sn : r
 class sp : ftl
 {
     displayName = "Spotter";
-    uniform[] = {"UK3CB_BAF_U_CombatUniform_MTP_Ghillie_RM"};
     radios[] = {"ACRE_PRC117F"};
     linkedItems[] += {"Leupold_Mk4"};
     items[] += {
 	#include "sniperitems.hpp"
 	};
 };
-class vc : smg
+class vc : r
 {
     displayName = "Vehicle Commander";
-    vest[] = {"V_TacVest_oli"};
-    headgear[] = {"UK3CB_BAF_H_CrewHelmet_B"};
+    backPack[] = {"OPTRE_ANPRC_521_Green"};
+    headgear[] = {"H_HelmetCrew_B"};
     radios[] = {"ACRE_PRC117F"};
+	hmd[] = {};
 };
-class vd : smg
+class vd : r
 {
     displayName = "Vehicle Driver";
-    vest[] = {"V_TacVest_oli"};
-    headgear[] = {"UK3CB_BAF_H_CrewHelmet_B"};
+    headgear[] = {"H_HelmetCrew_B"};
+	hmd[] = {};
     items[] += {
 	"ToolKit"
 	};
 };
-class vg : smg
+class vg : r
 {
     displayName = "Vehicle Gunner";
-    vest[] = {"V_TacVest_oli"};
-    headgear[] = {"UK3CB_BAF_H_CrewHelmet_B"};
+    headgear[] = {"H_HelmetCrew_B"};
+	hmd[] = {};
 };
-class pp : smg
+class pp : r
 {
     displayName = "Helicopter Pilot";
-    uniform[] = {"UK3CB_BAF_U_HeliPilotCoveralls_RN"};
-    vest[] = {"UK3CB_BAF_V_Pilot_A"};
-    headgear[] = {"UK3CB_BAF_H_PilotHelmetHeli_A"};
+    uniform[] = {"OPTRE_UNSC_Airforce_Uniform"};
+    vest[] = {"OPTRE_UNSC_M52A_Armor_Pilot_AF"};
+    headgear[] = {"OPTRE_UNSC_CH252_Helmet2_Vacuum_MAR"};
+    backPack[] = {"OPTRE_ANPRC_521_Green"};
     radios[] = {"ACRE_PRC117F"};
 };
-class pcc : car
+class pcc : pp
 {
     displayName = "Helicopter Crew Chief";
-    vest[] = {"UK3CB_BAF_V_Osprey_Rifleman_A"};
 };
 class pc : pcc
 {
     displayName = "Helicopter Crew";
 };
-class jp : baseMan
+class jp : pp
 {
     displayName = "Jet pilot";
-    uniform[] = {"UK3CB_BAF_U_HeliPilotCoveralls_RAF"};
-    vest[] = {"FIR_pilot_vest"};
-    headgear[] = {"FIR_JHMCS_II"};
-    backPack[] = {"B_AssaultPack_blk"};
-    radios[] = {"ACRE_PRC117F"};
-	hmd[] = {};
-    sidearmWeapon[] = {"rhsusf_weap_m1911a1"};
-    magazines[] =
-    {
-        LIST_4("rhsusf_mag_7x45acp_MHP")
-    };
-    linkedItems[] = {"ItemMap","ItemGPS","ItemCompass","ItemWatch"};
 };
 class eng : r
 {
     displayName = "Combat Engineer (Explosives)";
-    backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Engineer_H_A"};
-    magazines[] +=
-    {
-        LIST_4("ClaymoreDirectionalMine_Remote_Mag")
-    };
     backpackItems[] = {
         "MineDetector",
         "ToolKit",
-        LIST_2("DemoCharge_Remote_Mag"),
-        LIST_2("SLAMDirectionalMine_Wire_Mag")
+        LIST_4("C12_Remote_Mag"),
     };
     items[] += {"ACE_M26_Clacker","ACE_DefusalKit"};
 };
 class engm : r
 {
     displayName = "Combat Engineer (Mines)";
-    backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Engineer_H_A"};
-    items[] +=
-    {
-        LIST_2("APERSBoundingMine_Range_Mag"),
-        LIST_2("APERSTripMine_Wire_Mag"),
-        "ACE_M26_Clacker",
-        "ACE_DefusalKit"
-    };
     backpackItems[] = {
         "MineDetector",
         "ToolKit",
-        "ATMine_Range_Mag"
+        LIST_4("UNSCMine_Range_Mag"),
     };
+    items[] += {"ACE_M26_Clacker","ACE_DefusalKit"};
 };
 class UAV : r
 {
     displayName = "UAV Operator";
-    linkedItems[] += {"B_UavTerminal"};
+    backPack[] = {"B_rhsusf_B_BACKPACK"};
 };

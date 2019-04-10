@@ -298,6 +298,7 @@ force ace_switchunits_switchToWest = false;
 force ace_tagging_quickTag = 1;
 
 // ACE Uncategorized
+force ace_fastroping_requireRopeItems = false;
 force ace_gforces_enabledFor = 2;
 force ace_hitreactions_minDamageToTrigger = 0.1;
 //ace_inventory_inventoryDisplaySize = 0;
@@ -581,9 +582,9 @@ force adv_aceCPR_useLocation_AED = 0;
 
 // ADV - ACE Splint
 force adv_aceSplint_enable = true;
+force adv_aceSplint_patientCondition = 1;
 force adv_aceSplint_reopenChance_medic = 0;
 force adv_aceSplint_reopenChance_regular = 30;
-force adv_aceSplint_reopenChance = 0;
 force adv_aceSplint_reopenTime = 600;
 force adv_aceSplint_reuseChance = 80;
 
@@ -659,3 +660,8 @@ force STHud_Settings_Occlusion = true;
 force STHud_Settings_RemoveDeadViaProximity = true;
 force STHud_Settings_SquadBar = true;
 force STHud_Settings_TextShadow = 1;
+
+// VET_Unflipping
+force vet_unflipping_time = 5;
+force vet_unflipping_unit_man_limit = 7;
+force vet_unflipping_unit_mass_limit = 3000;

@@ -1,0 +1,8 @@
+LIST_35("OPTRE_Biofoam"),
+LIST_6("ACE_morphine"),
+LIST_6("ACE_epinephrine"),
+LIST_4("ACE_tourniquet"),
+LIST_5("adv_aceSplint_splint"),
+LIST_7("ACE_salineIV_500"),
+"ACE_surgicalKit",
+"adv_aceCPR_AED",

@@ -1,6 +1,6 @@
 class CfgLoadouts
 {
-	class middle_east_militia
+    class middle_east_militia
     {
         displayName = "Takistan Militia/Tribals";
 		category = "Middle East";
@@ -65,6 +65,18 @@ class CfgLoadouts
         displayName = "UNSC Woodland";
 		category = "Halo";
         #include "loadouts\unsc_woodland.hpp"
+    };
+    class unsc_desert
+    {
+        displayName = "UNSC Desert";
+		category = "Halo";
+        #include "loadouts\unsc_desert.hpp"
+    };
+    class unsc_urban
+    {
+        displayName = "UNSC Urban";
+		category = "Halo";
+        #include "loadouts\unsc_urban.hpp"
     };
     class unsc_odst
     {

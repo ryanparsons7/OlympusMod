@@ -322,7 +322,7 @@ class sn : r
     displayName = "Sniper";
     uniform[] = {"UK3CB_BAF_U_CombatUniform_MTP_Ghillie_RM"};
     primaryWeapon[] = {"UK3CB_BAF_L115A3_Ghillie"};
-    scope[] = {"RKSL_optic_PMII_525_wdl"};
+    scope[] = {"rhsusf_acc_leupoldmk4_wd"};
     sidearmWeapon[] = {"UK3CB_BAF_L131A1"};
     magazines[] =
     {

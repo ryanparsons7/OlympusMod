@@ -23,16 +23,16 @@ class baseMan {// Weaponless baseclass
     // Only *Weapons[] arrays are randomized
     secondaryWeapon[] = {};
     secondaryAttachments[] = {};
-    sidearmWeapon[] = {"OPTRE_M6G"};
-    sidearmAttachments[] = {"optre_m6g_scope","optre_m6g_flashlight","optre_m6_silencer"};
+    sidearmWeapon[] = {};
+    sidearmAttachments[] = {};
     // Leave empty to remove all. "Default" for secondaryWeapon or sidearmWeapon > leave original weapon.
 
     // These are added to the uniform or vest
     magazines[] = {};
     items[] =
     {
-		#include "basicitems.hpp"
-        #include "basicmedical.hpp"
+		#include "basicitems_optre.hpp"
+        #include "basicmedical_optre.hpp"
     };
 	
     // These are added directly into their respective slots
@@ -60,9 +60,12 @@ class r : baseMan
     vest[] = {"OPTRE_UNSC_M52D_Armor_Rifleman"};
     backPack[] = {"OPTRE_ILCS_Rucksack_Black"};
     primaryWeapon[] = {"OPTRE_MA5C"};
+    sidearmWeapon[] = {"OPTRE_M6G"};
+    sidearmAttachments[] = {"optre_m6g_scope","optre_m6g_flashlight","optre_m6_silencer"};
     magazines[] =
     {
         LIST_6("OPTRE_32Rnd_762x51_Mag"),
+        LIST_2("OPTRE_8Rnd_127x40_Mag"),
         LIST_1("OPTRE_M9_Frag"),
         LIST_2("SmokeShell")
     };
@@ -85,6 +88,7 @@ class car : r
     magazines[] =
     {
         LIST_6("OPTRE_36Rnd_95x40_Mag"),
+        LIST_2("OPTRE_8Rnd_127x40_Mag"),
         LIST_1("OPTRE_M9_Frag"),
         LIST_2("SmokeShell")
     };
@@ -99,6 +103,7 @@ class smg : r
     magazines[] =
     {
         LIST_3("OPTRE_60Rnd_5x23mm_Mag"),
+        LIST_2("OPTRE_8Rnd_127x40_Mag"),
         "OPTRE_M9_Frag",
         LIST_2("SmokeShell")
     };
@@ -109,7 +114,7 @@ class m : smg
     vest[] = {"OPTRE_UNSC_M52D_Armor_Medic"};
     backPack[] = {"OPTRE_ILCS_Rucksack_Medical"};
     items[] += {
-        #include "medicalbackpack.hpp"
+        #include "medicalbackpack_optre.hpp"
     };
 };
 class ftl : g
@@ -148,6 +153,7 @@ class ar : r
     magazines[] =
     {
         LIST_3("OPTRE_200Rnd_95x40_Box"),
+        LIST_2("OPTRE_8Rnd_127x40_Mag"),
         "OPTRE_M9_Frag",
         "SmokeShell"
     };
@@ -230,16 +236,14 @@ class hatg : r
     displayName = "HAT Gunner";
     secondaryWeapon[] = {"OPTRE_M41_SSR_G"};
     backpackItems[] = {
-        LIST_2("OPTRE_M41_Twin_HEAT"),
-        "OPTRE_M41_Twin_HEAP"
+        LIST_3("OPTRE_M41_Twin_HEAT_G")
     };
 };
 class hatac : r
 {
     displayName = "HAT Ammo Carrier";
     backpackItems[] = {
-        LIST_2("OPTRE_M41_Twin_HEAT"),
-        "OPTRE_M41_Twin_HEAP"
+        LIST_3("OPTRE_M41_Twin_HEAT_G")
     };
 };
 class hatag : r
@@ -297,6 +301,7 @@ class sn : r
         LIST_4("OPTRE_4Rnd_145x114_APFSDS_Mag"),
         LIST_4("OPTRE_4Rnd_145x114_HEDP_Mag"),
         LIST_4("OPTRE_4Rnd_145x114_HVAP_Mag"),
+        LIST_2("OPTRE_8Rnd_127x40_Mag"),
         LIST_1("OPTRE_M9_Frag")
     };
     items[] += {

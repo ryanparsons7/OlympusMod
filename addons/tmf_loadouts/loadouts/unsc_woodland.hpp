@@ -31,8 +31,8 @@ class baseMan {// Weaponless baseclass
     magazines[] = {};
     items[] =
     {
-		#include "basicitems.hpp"
-        #include "basicmedical.hpp"
+		#include "basicitems_optre.hpp"
+        #include "basicmedical_optre.hpp"
     };
 	
     // These are added directly into their respective slots
@@ -61,7 +61,7 @@ class r : baseMan
     primaryWeapon[] = {"OPTRE_MA37"};
     magazines[] =
     {
-        LIST_6("OPTRE_32Rnd_762x51_Mag"),
+        LIST_8("OPTRE_32Rnd_762x51_Mag"),
         LIST_1("OPTRE_M9_Frag"),
         LIST_2("SmokeShell")
     };
@@ -83,7 +83,7 @@ class car : r
     scope[] = {"optre_br55hb_scope"};
     magazines[] =
     {
-        LIST_6("OPTRE_36Rnd_95x40_Mag"),
+        LIST_8("OPTRE_36Rnd_95x40_Mag"),
         LIST_1("OPTRE_M9_Frag"),
         LIST_2("SmokeShell")
     };
@@ -95,7 +95,7 @@ class m : r
     vest[] = {"OPTRE_UNSC_M52A_Armor_Medic_WDL"};
     backPack[] = {"OPTRE_UNSC_Rucksack_Medic"};
     items[] += {
-        #include "medicalbackpack.hpp"
+        #include "medicalbackpack_optre.hpp"
     };
 };
 class smg : r
@@ -121,7 +121,7 @@ class ftl : g
         LIST_2("SmokeShellGreen"),
 		"Laserbatteries"
     };
-    linkedItems[] += {"Laserdesignator"};
+    linkedItems[] += {"OPTRE_Smartfinder"};
 };
 class sl : ftl
 {
@@ -237,16 +237,14 @@ class hatg : r
     displayName = "HAT Gunner";
     secondaryWeapon[] = {"OPTRE_M41_SSR_G"};
     backpackItems[] = {
-        LIST_2("OPTRE_M41_Twin_HEAT"),
-        "OPTRE_M41_Twin_HEAP"
+        LIST_3("OPTRE_M41_Twin_HEAT_G")
     };
 };
 class hatac : r
 {
     displayName = "HAT Ammo Carrier";
     backpackItems[] = {
-        LIST_2("OPTRE_M41_Twin_HEAT"),
-        "OPTRE_M41_Twin_HEAP"
+        LIST_3("OPTRE_M41_Twin_HEAT_G")
     };
 };
 class hatag : r
