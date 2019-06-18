@@ -60,30 +60,6 @@ class CfgLoadouts
 		category = "Independents";
         #include "loadouts\horizon_defence_force.hpp"
     };
-    class unsc_woodland
-    {
-        displayName = "UNSC Woodland";
-		category = "Halo";
-        #include "loadouts\unsc_woodland.hpp"
-    };
-    class unsc_desert
-    {
-        displayName = "UNSC Desert";
-		category = "Halo";
-        #include "loadouts\unsc_desert.hpp"
-    };
-    class unsc_urban
-    {
-        displayName = "UNSC Urban";
-		category = "Halo";
-        #include "loadouts\unsc_urban.hpp"
-    };
-    class unsc_odst
-    {
-        displayName = "UNSC ODST";
-		category = "Halo";
-        #include "loadouts\unsc_odst.hpp"
-    };
     class tak_national_army
     {
         displayName = "Takistan National Army";
