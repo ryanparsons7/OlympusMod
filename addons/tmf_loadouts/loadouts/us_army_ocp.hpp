@@ -34,7 +34,7 @@ class baseMan {// Weaponless baseclass
 		#include "basicitems.hpp"
         #include "basicmedical.hpp"
     };
-	
+
     // These are added directly into their respective slots
     linkedItems[] = {
         "ItemMap",
@@ -238,12 +238,24 @@ class hmgag : r
 class matg : r
 {
     displayName = "MAT Gunner";
-    secondaryWeapon[] = {"rhs_weap_M136"};
+    backPack[] = {"B_Carryall_mcamo"};
+    secondaryWeapon[] = {"rhs_weap_maaws"};
+    secondaryAttachments[] = {"rhs_optic_maaws"};
+    backpackItems[] =
+    {
+        LIST_2("rhs_mag_maaws_HEAT"),
+        "rhs_mag_maaws_HE"
+    };
 };
 class matac : r
 {
     displayName = "MAT Ammo Carrier";
-    secondaryWeapon[] = {"rhs_weap_M136"};
+    backPack[] = {"B_Carryall_mcamo"};
+    backpackItems[] =
+    {
+        LIST_2("rhs_mag_maaws_HEAT"),
+        "rhs_mag_maaws_HE"
+    };
 };
 class matag : r
 {
