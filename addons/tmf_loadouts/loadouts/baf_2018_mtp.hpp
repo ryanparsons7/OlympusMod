@@ -39,7 +39,7 @@ class baseMan {// Weaponless baseclass
     linkedItems[] = {
         "ItemMap",
         "ItemCompass",
-		"ItemGPS",
+        "ItemGPS",
         "ItemWatch"
     };
 
@@ -59,7 +59,7 @@ class r : baseMan
     vest[] = {"UK3CB_BAF_V_Osprey_Rifleman_A","UK3CB_BAF_V_Osprey_Rifleman_B","UK3CB_BAF_V_Osprey_Rifleman_C","UK3CB_BAF_V_Osprey_Rifleman_D","UK3CB_BAF_V_Osprey_Rifleman_E","UK3CB_BAF_V_Osprey_Rifleman_F"};
     backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B"};
     primaryWeapon[] = {"UK3CB_BAF_L85A2_RIS"};
-    scope[] = {"rksl_optic_eot552"};
+    scope[] = {"RKSL_optic_LDS"};
     attachment[] = {"uk3cb_baf_llm_flashlight_black"};
     magazines[] =
     {
@@ -152,17 +152,15 @@ class jtac : co
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    primaryWeapon[] = {"UK3CB_BAF_L110A2RIS"};
-    scope[] = {"RKSL_optic_LDS"};
-    attachment[] = {"UK3CB_BAF_LLM_IR_Black"};
-    vest[] = {"UK3CB_BAF_V_Osprey_MG_B"};
+	vest[] = {"UK3CB_BAF_V_Osprey_MG_B"};
+    primaryWeapon[] = {"UK3CB_BAF_L7A2"};
     sidearmWeapon[] = {"UK3CB_BAF_L131A1"};
     magazines[] =
     {
-        LIST_3("UK3CB_BAF_556_200Rnd"),
-        LIST_2("UK3CB_BAF_556_200Rnd_T"),
-        "HandGrenade",
-        "SmokeShell",
+        LIST_3("UK3CB_BAF_762_100Rnd"),
+        LIST_1("UK3CB_BAF_762_100Rnd_T"),
+        LIST_1("HandGrenade"),
+        LIST_1("SmokeShell"),
         LIST_4("UK3CB_BAF_9_17Rnd")
     };
 };
@@ -171,15 +169,19 @@ class aar : r
     displayName = "Assistant Automatic Rifleman";
     backpackItems[] =
     {
-        LIST_2("UK3CB_BAF_556_200Rnd"),
-        "UK3CB_BAF_556_200Rnd_T"
+        LIST_3("UK3CB_BAF_762_100Rnd"),
+        LIST_1("UK3CB_BAF_762_100Rnd_T")
     };
     linkedItems[] += {"Binocular"};
 };
 class rat : car
 {
     displayName = "Rifleman (AT)";
-    secondaryWeapon[] = {"rhs_weap_M136"};
+	backpackItems[] =
+    {
+        LIST_2("UK3CB_BAF_762_100Rnd")
+    };
+    secondaryWeapon[] = {"UK3CB_BAF_AT4_CS_AT_Launcher"};
 };
 class dm : r
 {
@@ -260,14 +262,14 @@ class matag : r
 {
     displayName = "MAT Assistant Gunner";
 	secondaryWeapon[] = {"launch_NLAW_F"};
-    linkedItems[] += {"Binocular","ItemGPS"};
+    linkedItems[] += {"Binocular"};
 };
 class hatg : r
 {
     displayName = "HAT Gunner";
     secondaryWeapon[] = {"rhs_weap_fgm148"};
     backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A"};
-     magazines[] +=	
+    magazines[] +=	
 	{
         LIST_2("rhs_fgm148_magazine_AT")
     };
@@ -275,8 +277,8 @@ class hatg : r
 class hatac : r
 {
     displayName = "HAT Ammo Carrier";
-    backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A"};
-    backpackItems[] = 
+   backPack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_XL_A"};
+   magazines[] +=	
 	{
         LIST_2("rhs_fgm148_magazine_AT")
     };
@@ -324,7 +326,7 @@ class samag : r
     displayName = "AA Assistant Missile Specialist";
     backpackItems[] =
     {
-        LIST_1("rhs_fim92_mag")
+        LIST_2("rhs_fim92_mag")
     };
 	linkedItems[] += {"Binocular"};
 };

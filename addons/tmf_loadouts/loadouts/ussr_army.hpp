@@ -4,12 +4,12 @@
 class baseMan {// Weaponless baseclass
     displayName = "Unarmed";
     // All randomized.
-     uniform[] = {"rhs_uniform_FROG01_d"};
+     uniform[] = {"rhs_uniform_flora_patchless"};
        vest[] = {};
-       backpack[] = {};
+       backpack[] = {"rhs_sidor"};
        headgear[] = {};
-       goggles[] = {"rhsusf_oakley_goggles_blk"};
-       hmd[] = {"rhsusf_ANPVS_14"};
+       goggles[] = {"rhs_scarf"};
+       hmd[] = {};
     // Leave empty to remove all. "Default" > leave original item.
 
     // All randomized
@@ -34,12 +34,11 @@ class baseMan {// Weaponless baseclass
 		#include "basicitems.hpp"
         #include "basicmedical.hpp"
     };
-
+	
     // These are added directly into their respective slots
     linkedItems[] = {
         "ItemMap",
         "ItemCompass",
-        "ItemGPS",
         "ItemWatch"
     };
 
@@ -55,47 +54,35 @@ class baseMan {// Weaponless baseclass
 class r : baseMan
 {
     displayName = "Rifleman";
-    headgear[] = {"rhsusf_lwh_helmet_marpatd"};
-    vest[] = {"rhsusf_spc_rifleman"};
-    backpack[] = {"rhsusf_assault_eagleaiii_coy"};
-    primaryWeapon[] = {"rhs_weap_m4_carryhandle"};
-    scope[] = {"rhsusf_acc_compm4"};
-    attachment[] = {"rhsusf_acc_wmx_bk"};
+    headgear[] = {"rhs_ssh68"};
+    vest[] = {"rhs_6b5"};
+    primaryWeapon[] = {"rhs_weap_ak74"};
     magazines[] =
     {
-        LIST_6("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
-        LIST_2("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
-        LIST_1("HandGrenade"),
-        LIST_2("SmokeShell")
+        LIST_8("rhs_30Rnd_545x39_7N6_AK"),
+        LIST_1("rhs_mag_rgn"),
+        LIST_2("rhs_mag_rdg2_white")
     };
 };
 class g : r
 {
     displayName = "Grenadier";
-    vest[] = {"rhsusf_iotv_ocp_Grenadier"};
-    primaryWeapon[] = {"rhs_weap_m4a1_carryhandle_m203"};
+    primaryWeapon[] = {"rhs_weap_ak74_gp25"};
     magazines[] +=
     {
-        LIST_3("1Rnd_HE_Grenade_shell"),
-        LIST_3("1Rnd_Smoke_Grenade_shell")
+        LIST_3("rhs_VOG25"),
+        LIST_3("rhs_VG40MD_White")
     };
 };
 class car : r
 {
     displayName = "Carabinier";
-    primaryWeapon[] = {"rhs_weap_m4_carryhandle"};
-    magazines[] =
-    {
-        LIST_8("rhs_mag_30Rnd_556x45_M855A1_Stanag"),
-        LIST_2("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"),
-        LIST_1("HandGrenade"),
-        LIST_2("SmokeShell")
-    };
+	primaryWeapon[] = {"rhs_weap_aks74u"};
 };
 class m : r
 {
     displayName = "Medic";
-    vest[] = {"rhsusf_spc_corpsman"};
+    vest[] = {"rhs_6b5_medic"};
     items[] += {
         #include "medicalbackpack.hpp"
     };
@@ -103,43 +90,50 @@ class m : r
 class smg : r
 {
     displayName = "Submachinegunner";
-    primaryWeapon[] = {"hlc_smg_mp5a2"};
+    primaryWeapon[] = {"rhs_weap_aks74u"};
     scope[] = {};
     magazines[] =
     {
-        LIST_6("hlc_30Rnd_9x19_B_MP5"),
-        "HandGrenade",
-        LIST_2("SmokeShell")
+        LIST_4("rhs_30Rnd_545x39_AK"),
+        "rhs_mag_rgn",
+        LIST_2("rhs_mag_rdg2_white")
     };
 };
 class ftl : g
 {
     displayName = "Fireteam Leader";
-    vest[] = {"rhsusf_spc_teamleader"};
-    scope[] = {"rhsusf_acc_ACOG3"};
     magazines[] +=
     {
-        LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
-        LIST_2("1Rnd_SmokeRed_Grenade_shell"),
-        LIST_2("SmokeShellGreen"),
-		"Laserbatteries"
+        LIST_2("rhs_VG40MD_Green"),
+        LIST_2("rhs_VG40MD_Red"),
+        LIST_2("rhs_mag_rdg2_white")
     };
-    linkedItems[] += {"Laserdesignator"};
+    linkedItems[] += {"Binocular","ItemGPS"};
 };
 class sl : ftl
 {
     displayName = "Squad Leader";
-    vest[] = {"rhsusf_spc_squadleader"};
-    sidearmWeapon[] = {"hlc_Pistol_M11A1"};
+	vest[] = {"rhs_6b5_officer"};
+    sidearmWeapon[] = {"rhs_weap_makarov_pm"};
     magazines[] +=
     {
-        LIST_3("hlc_13Rnd_9x19_B_P228")
+        LIST_2("rhs_mag_9x18_8_57N181S"),
     };
 };
 class co : sl
 {
     displayName = "Platoon Leader";
     radios[] = {"ACRE_PRC117F"};
+	magazines[] =
+    {
+        LIST_2("rhs_VOG25"),
+        LIST_2("rhs_VG40MD_White"),
+		LIST_2("rhs_VG40MD_Green"),
+        LIST_2("rhs_VG40MD_Red"),
+        LIST_1("rhs_mag_rdg2_white"),
+		LIST_2("rhs_mag_9x18_8_57N181S"),
+		LIST_6("rhs_30Rnd_545x39_AK"),
+    };
 };
 class jtac : co
 {
@@ -148,17 +142,15 @@ class jtac : co
 class ar : r
 {
     displayName = "Automatic Rifleman";
-    vest[] = {"rhsusf_spc_iar"};
-    primaryWeapon[] = {"rhs_weap_m27iar"};
-    scope[] = {"rhsusf_acc_ACOG3"};
-    sidearmWeapon[] = {"hlc_Pistol_M11A1"};
-    bipod[] = {"rhsusf_acc_harris_bipod"};
+    primaryWeapon[] = {"hlc_rifle_rpk74n"};
+    sidearmWeapon[] = {"rhs_weap_makarov_pm"};
     magazines[] =
     {
-        LIST_5("rhs_mag_100Rnd_556x45_M855A1_cmag_mixed"),
-        "HandGrenade",
-        "SmokeShell",
-        LIST_4("hlc_13Rnd_9x19_B_P228")
+        LIST_5("hlc_45Rnd_545x39_b_rpk"),
+        LIST_2("hlc_45Rnd_545x39_m_rpk"),
+        "rhs_mag_rgn",
+        "rhs_mag_rdg2_white",
+        LIST_4("rhs_mag_9x18_8_57N181S")
     };
 };
 class aar : r
@@ -166,124 +158,127 @@ class aar : r
     displayName = "Assistant Automatic Rifleman";
     backpackItems[] =
     {
-        LIST_3("rhs_mag_100Rnd_556x45_M855A1_cmag_mixed")
+        LIST_4("hlc_45Rnd_545x39_b_rpk"),
+        LIST_2("hlc_45Rnd_545x39_m_rpk")
     };
     linkedItems[] += {"Binocular"};
 };
 class rat : car
 {
     displayName = "Rifleman (AT)";
-    secondaryWeapon[] = {"rhs_weap_m72a7"};
+	backPack[] = {"rhs_rpg_empty"};
+    secondaryWeapon[] = {"rhs_weap_rpg7"};
+	magazines[] +=
+    {
+        LIST_1("rhs_rpg7_PG7V_mag"),
+		LIST_1("rhs_rpg7_OG7V_mag")
+    };
 };
 class dm : r
 {
     displayName = "Designated Marksman";
-    primaryWeapon[] = {"rhs_weap_sr25_ec"};
-    scope[] = {"rhsusf_acc_premier"};
-    bipod[] = {"rhsusf_acc_harris_bipod"};
+    primaryWeapon[] = {"rhs_weap_svdp"};
+    vest[] = {"rhs_6b5_sniper"};
+    scope[] = {"rhs_acc_pso1m2"};
     magazines[] =
     {
-        LIST_6("rhsusf_20Rnd_762x51_m118_special_Mag"),
-        LIST_2("rhsusf_20Rnd_762x51_m62_Mag"),
-        LIST_1("HandGrenade"),
-        LIST_2("SmokeShell")
+        LIST_8("rhs_10Rnd_762x54mmR_7N1"),
+        LIST_1("rhs_mag_rgn"),
+        LIST_2("rhs_mag_rdg2_white")
     };
+	linkedItems[] += {"Binocular"};
 };
 class mmgg : ar
 {
     displayName = "MMG Gunner";
-    primaryWeapon[] = {"rhs_weap_m240B"};
-    scope[] = {"rhsusf_acc_ACOG_MDO"};
-    vest[] = {"rhsusf_spc_mg"};
+	backPack[] = {"B_Carryall_oli"};
+    primaryWeapon[] = {"rhs_weap_pkp"};
+    scope[] = {};
     magazines[] =
     {
-        LIST_4("rhsusf_100Rnd_762x51"),
-        LIST_2("rhsusf_100Rnd_762x51_m62_tracer"),
-        "HandGrenade",
-        "SmokeShell",
-        LIST_4("hlc_13Rnd_9x19_B_P228")
+        LIST_3("rhs_100Rnd_762x54mmR"),
+        "rhs_mag_rgn",
+        "rhs_mag_rdg2_white",
+        LIST_4("rhs_mag_9x18_8_57N181S")
     };
 };
 class mmgac : r
 {
     displayName = "MMG Ammo Carrier";
+	backPack[] = {"B_Carryall_oli"};
     backpackItems[] =
     {
-        LIST_3("rhsusf_100Rnd_762x51")
+        LIST_2("rhs_100Rnd_762x54mmR")
     };
 };
 class mmgag : aar
 {
     displayName = "MMG Assistant Gunner";
+	backPack[] = {"B_Carryall_oli"};
     backpackItems[] =
     {
-        LIST_3("rhsusf_100Rnd_762x51")
+        LIST_2("rhs_100Rnd_762x54mmR")
     };
-    linkedItems[] += {"Binocular"};
+    linkedItems[] += {"Binocular","ItemGPS"};
 };
 class hmgg : r
 {
     displayName = "HMG Gunner";
-    backPack[] = {"RHS_M2_Gun_Bag"};
+    backPack[] = {"RHS_DShkM_Gun_Bag"};
 
 };
 class hmgac : r
 {
     displayName = "HMG Ammo Carrier";
-    backPack[] = {"RHS_M2_Gun_Bag"};
+    backPack[] = {"RHS_DShkM_TripodHigh_Bag"};
 };
 class hmgag : r
 {
     displayName = "HMG Assistant Gunner";
-    backPack[] = {"RHS_M2_Tripod_Bag"};
-    linkedItems[] += {"Binocular"};
+    backPack[] = {"B_Carryall_oli"};
+    linkedItems[] += {"Binocular","ItemGPS"};
 };
 class matg : r
 {
     displayName = "MAT Gunner";
-    backPack[] = {"B_Carryall_oli"};
-    secondaryWeapon[] = {"rhs_weap_smaw_green"};
-    secondaryAttachments[] = {"rhs_weap_optic_smaw"};
+    secondaryWeapon[] = {"rhs_weap_rpg7"};
+    secondaryAttachments[] = {"rhs_acc_pgo7v3"};
+    backPack[] = {"rhs_rpg_empty"};
     backpackItems[] = {
-        LIST_2("rhs_mag_smaw_HEAA"),
-        LIST_3("rhs_mag_smaw_SR")
+        LIST_2("rhs_rpg7_PG7V_mag"),
+		"rhs_rpg7_PG7VL_mag",
+		"rhs_rpg7_OG7V_mag"
     };
 };
 class matac : r
 {
     displayName = "MAT Ammo Carrier";
-    backPack[] = {"B_Carryall_oli"};
+    backPack[] = {"rhs_rpg_empty"};
     backpackItems[] = {
-        LIST_2("rhs_mag_smaw_HEAA"),
-        LIST_3("rhs_mag_smaw_SR")
+        LIST_2("rhs_rpg7_PG7V_mag"),
+		"rhs_rpg7_PG7VL_mag",
+		"rhs_rpg7_OG7V_mag"
     };
 };
 class matag : r
 {
     displayName = "MAT Assistant Gunner";
-    linkedItems[] += {"Binocular"};
+    linkedItems[] += {"Binocular","ItemGPS"};
 };
 class hatg : r
 {
     displayName = "HAT Gunner";
-    backPack[] = {"B_Carryall_oli"};
-    secondaryWeapon[] = {"rhs_weap_fgm148"};
-    backpackItems[] = {
-        "rhs_fgm148_magazine_AT"
-    };
+    backPack[] = {"RHS_Metis_Gun_Bag"};
 };
 class hatac : r
 {
     displayName = "HAT Ammo Carrier";
-    backPack[] = {"B_Carryall_oli"};
-    backpackItems[] = {
-        "rhs_fgm148_magazine_AT"
-    };
+    backPack[] = {"RHS_Metis_Tripod_Bag"};
 };
 class hatag : r
 {
     displayName = "HAT Assistant Gunner";
-    linkedItems[] += {"Binocular"};
+    linkedItems[] += {"Binocular","ItemGPS"};
 };
 class mtrg : r
 {
@@ -307,14 +302,15 @@ class mtrag : r
     items[] += {
 	"ACE_RangeTable_82mm"
 	};
+	linkedItems[] += {"Binocular","ItemGPS"};
 };
 class samg : r
 {
     displayName = "AA Missile Specialist";
-    secondaryWeapon[] = {"rhs_weap_fim92"};
+    secondaryWeapon[] = {"rhs_weap_igla"};
     magazines[] +=
     {
-        LIST_1("rhs_fim92_mag")
+        LIST_1("rhs_mag_9k38_rocket")
     };
 };
 class samag : r
@@ -322,22 +318,23 @@ class samag : r
     displayName = "AA Assistant Missile Specialist";
     backpackItems[] =
     {
-        LIST_1("rhs_fim92_mag")
+        LIST_1("rhs_mag_9k38_rocket")
     };
+	linkedItems[] += {"Binocular","ItemGPS"};
 };
 class sn : r
 {
     displayName = "Sniper";
-    vest[] = {"rhsusf_spc_marksman"};
-    primaryWeapon[] = {"rhs_weap_m40a5_wd"};
-    scope[] = {"rhsusf_acc_M8541_low_wd"};
-    bipod[] = {"rhsusf_acc_harris_swivel"};
-    sidearmWeapon[] = {"hlc_Pistol_M11A1"};
+	uniform[] = {"rhs_uniform_gorka_r_g"};
+    vest[] = {"rhs_6b5_sniper"};
+    primaryWeapon[] = {"rhs_weap_svdp_wd_npz"};
+    scope[] = {"rhs_acc_dh520x56"};
+    sidearmWeapon[] = {"rhs_weap_makarov_pm"};
     magazines[] =
     {
-        LIST_9("rhsusf_10Rnd_762x51_m118_special_Mag"),
-        LIST_1("HandGrenade"),
-        LIST_4("hlc_13Rnd_9x19_B_P228")
+        LIST_9("rhs_10Rnd_762x54mmR_7N1"),
+        LIST_2("rhs_mag_rgn"),
+        LIST_4("rhs_mag_9x18_8_57N181S")
     };
     items[] += {
 	#include "sniperitems.hpp"
@@ -347,51 +344,50 @@ class sn : r
 class sp : ftl
 {
     displayName = "Spotter";
+    uniform[] = {"rhs_uniform_gorka_r_g"};
+	backPack[] = {"B_Carryall_oli"};
     radios[] = {"ACRE_PRC117F"};
-    linkedItems[] += {"Leupold_Mk4"};
+    linkedItems[] += {"Leupold_Mk4","ItemGPS"};
     items[] += {
 	#include "sniperitems.hpp"
 	};
 };
-class vc : car
+class vc : smg
 {
     displayName = "Vehicle Commander";
-    vest[] = {"rhsusf_spc_crewman"};
-    headgear[] = {"rhsusf_cvc_helmet"};
-    goggles[] = {"rhs_ess_black"};
+    vest[] = {"rhs_6b5_khaki"};
+	headgear[] = {"rhs_tsh4_ess"};
+    goggles[] = {"rhs_scarf"};
     radios[] = {"ACRE_PRC117F"};
-	hmd[] = {};
 };
-class vd : car
+class vd : smg
 {
     displayName = "Vehicle Driver";
-    vest[] = {"rhsusf_spc_crewman"};
-    headgear[] = {"rhsusf_cvc_helmet"};
-    goggles[] = {"rhs_ess_black"};
-	hmd[] = {};
+    vest[] = {"rhs_6b5_khaki"};
+	headgear[] = {"rhs_tsh4_ess"};
+    goggles[] = {"rhs_scarf"};
     items[] += {
 	"ToolKit"
 	};
 };
-class vg : car
+class vg : smg
 {
     displayName = "Vehicle Gunner";
-    vest[] = {"rhsusf_spc_crewman"};
-    headgear[] = {"rhsusf_cvc_helmet"};
-    goggles[] = {"rhs_ess_black"};
-	hmd[] = {};
+    vest[] = {"rhs_6b5_khaki"};
+    headgear[] = {"rhs_tsh4_ess"};
+    goggles[] = {"rhs_scarf"};
 };
-class pp : car
+class pp : smg
 {
     displayName = "Helicopter Pilot";
-    vest[] = {"rhsusf_spc_crewman"};
-    headgear[] = {"rhsusf_hgu56p"};
+    uniform[] = {"rhs_uniform_df15"};
+    vest[] = {"rhs_6b5_khaki"};
+    headgear[] = {"rhs_zsh7a_mike_green_alt"};
     radios[] = {"ACRE_PRC117F"};
 };
-class pcc : pp
+class pcc : car
 {
     displayName = "Helicopter Crew Chief";
-    headgear[] = {"rhsusf_hgu56p_visor_mask"};
 };
 class pc : pcc
 {
@@ -400,38 +396,35 @@ class pc : pcc
 class jp : baseMan
 {
     displayName = "Jet pilot";
-	hmd[] = {};
-	goggles[] = {};
-    uniform[] = {"FIR_Fighter_Pilot_USN_Nomex5"};
+    uniform[] = {"rhs_uniform_df15_tan"};
     vest[] = {"FIR_pilot_vest"};
-    headgear[] = {"FIR_JHMCS_II"};
+    headgear[] = {"rhs_zsh7a_alt"};
     backPack[] = {"B_AssaultPack_blk"};
     radios[] = {"ACRE_PRC117F"};
-    sidearmWeapon[] = {"hlc_Pistol_M11A1"};
+	hmd[] = {};
+    sidearmWeapon[] = {"rhs_weap_makarov_pm"};
     magazines[] =
     {
-        LIST_4("hlc_13Rnd_9x19_B_P228")
+        LIST_4("rhs_mag_9x18_8_57N181S")
     };
     linkedItems[] = {"ItemMap","ItemGPS","ItemCompass","ItemWatch"};
 };
 class eng : r
 {
     displayName = "Combat Engineer (Explosives)";
-    magazines[] +=
-    {
-        LIST_4("ClaymoreDirectionalMine_Remote_Mag")
-    };
+    backpack[] = {"rhs_assault_umbts_engineer_empty"};
     backpackItems[] = {
         "MineDetector",
         "ToolKit",
-        LIST_2("DemoCharge_Remote_Mag"),
-        LIST_2("SLAMDirectionalMine_Wire_Mag")
+        LIST_1("DemoCharge_Remote_Mag"),
+        LIST_1("SLAMDirectionalMine_Wire_Mag")
     };
     items[] += {"ACE_M26_Clacker","ACE_DefusalKit"};
 };
 class engm : r
 {
     displayName = "Combat Engineer (Mines)";
+    backpack[] = {"rhs_assault_umbts_engineer_empty"};
     items[] +=
     {
         LIST_2("APERSBoundingMine_Range_Mag"),
@@ -448,5 +441,5 @@ class engm : r
 class UAV : r
 {
     displayName = "UAV Operator";
-    backPack[] = {"B_rhsusf_B_BACKPACK"};
+    linkedItems[] += {"B_UavTerminal"};
 };
