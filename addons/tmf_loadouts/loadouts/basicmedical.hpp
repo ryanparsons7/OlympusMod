@@ -1,4 +1,4 @@
 LIST_8("ACE_quikclot"),
-"adv_aceSplint_splint",
 "ACE_morphine",
-"ACE_tourniquet",
+LIST_2("ACE_tourniquet"),
+"ACE_Splint",
